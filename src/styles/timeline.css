@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('../src/fonts/SourceCodePro-Regular.ttf');
+}
+
+* {
+    font-family: 'Source Code Pro';
+    font-style: normal;
+    font-weight: normal;
+    transition: 0.3s;
+}
+
+body {
+    background: #E7EAED;
+    position: relative;
+}
+
+.tragetoria {
+    display: grid;
+    grid-template-columns: 1fr 30px 1fr;
+    grid-template-rows: auto auto auto;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+.year-left {
+    grid-column: 1;
+    grid-row: 1;
+    margin: 10px 40px;
+    justify-self: end;
+}
+
+.year-right {
+    grid-column: 3;
+    grid-row: 1;
+    margin: 10px 40px;
+}
+
+.year-photo {
+    width: 100%;
+    max-width: 480px;
+    border-radius: 25px;
+}
+
+.year-title {
+    font-size: 50px;
+    color: #6CA2F3;
+    margin: 0;
+}
+
+.point {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: center;
+    width: 30px;
+    height: 30px;
+    background: #6CA2F3;
+    border: 3px solid #E7EAED;
+    border-radius: 50%;
+}
+
+.line {
+    z-index: -1;
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: center;
+    width: 4px;
+    height: 100%;
+    background-image: linear-gradient(rgba(192, 202, 213, 0), rgb(192, 202, 213), rgba(192, 202, 213, 0));
+}
+
+.topic {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.topic p {
+    font-size: 25px;
+    color: #000000;
+    margin: 10px 40px;
+}
+
+.comment {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.comment p {
+    font-size: 20px;
+    color: white;
+    background: #6CA2F3;
+    padding: 12px 30px;
+    border-radius: 20px;
+    margin: 20px 26px;
+}
+
+/* ---------- Mobile --------------- */
+
+@media screen and (max-device-width: 768px), screen and (max-width: 768px) {
+    .tragetoria {
+        grid-template-columns: 30px 1fr;
+        grid-template-rows: auto auto auto auto;
+    }
+    .year-left {
+        grid-column: 2;
+        grid-row: 1;
+        justify-self: left;
+    }
+    .year-right {
+        grid-column: 2;
+        grid-row: 2;
+        margin: 10px;
+    }
+    .year-title {
+        font-size: 56px;
+    }
+    .point {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .line {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .topic {
+        grid-column: 2;
+        grid-row: 3;
+    }
+    .topic p {
+        font-size: 30px;
+        margin: 10px;
+    }
+    .comment {
+        grid-column: 2;
+        grid-row: 4;
+    }
+    .comment p {
+        font-size: 26px;
+        margin: 20px 10px;
+    }
+}
+
+/* ---------- Tamanho máximo --------------- */
+
+@media only screen and (min-width: 1280px) {
+    .tragetoria {
+        grid-template-columns: 585px 30px 585px;
+    }
+}
