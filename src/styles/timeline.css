@@ -1,27 +1,9 @@
-@font-face {
-    font-family: 'Source Code Pro';
-    src: url('../src/fonts/SourceCodePro-Regular.ttf');
-}
-
-* {
-    font-family: 'Source Code Pro';
-    font-style: normal;
-    font-weight: normal;
-    transition: 0.3s;
-}
-
-body {
-    background: #E7EAED;
-    position: relative;
-}
-
 .tragetoria {
     display: grid;
     grid-template-columns: 1fr 30px 1fr;
     grid-template-rows: auto auto auto;
     align-items: center;
     justify-content: center;
-    transition: 0.2s;
 }
 
 .year-left {
