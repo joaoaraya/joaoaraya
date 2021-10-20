@@ -83,6 +83,7 @@
     .tragetoria {
         grid-template-columns: 30px 1fr;
         grid-template-rows: auto auto auto auto;
+        margin-bottom: 32px;
     }
     .year-left {
         grid-column: 2;
@@ -92,10 +93,14 @@
     .year-right {
         grid-column: 2;
         grid-row: 2;
-        margin: 10px;
+        margin: 5px;
+    }
+    .year-photo {
+        width: 100%;
+        border-radius: 25px;
     }
     .year-title {
-        font-size: 56px;
+        font-size: 45px;
     }
     .point {
         grid-column: 1;
@@ -110,16 +115,16 @@
         grid-row: 3;
     }
     .topic p {
-        font-size: 30px;
-        margin: 10px;
+        font-size: 20px;
+        margin: 5px;
     }
     .comment {
         grid-column: 2;
         grid-row: 4;
     }
     .comment p {
-        font-size: 26px;
-        margin: 20px 10px;
+        font-size: 16px;
+        margin: 10px 5px;
     }
 }
 
