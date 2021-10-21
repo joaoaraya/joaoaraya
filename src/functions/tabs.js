@@ -1,4 +1,5 @@
 let tabTop = document.querySelector('.tab-title');
+let click = 0;
 
 function openTab(evt, tabName, named) {
     var i, tabcontent, tablinks;
@@ -17,10 +18,14 @@ function openTab(evt, tabName, named) {
     tabTop.innerHTML = `<p>${named}</p>`;
 
     // Scroll to top
-    tabTop.scrollIntoView({
-        top: 0,
-        behavior: "smooth"
-    });
+    if (click > 0) {
+        tabTop.scrollIntoView({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+
+    click++;
 }
 
 // Get the element with id="defaultOpen" and click on it
