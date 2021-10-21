@@ -4,7 +4,7 @@
     grid-template-rows: auto auto;
     align-items: center;
     justify-content: center;
-    margin: 24px 16px;
+    margin: 24px 8px;
     padding: 10px 40px 30px 40px;
     border-radius: 30px;
     background-color: rgb(255, 255, 255);
@@ -53,6 +53,8 @@
     padding: 8px 0;
 }
 
+/* ---------- Mobile --------------- */
+
 @media screen and (max-device-width: 768px), screen and (max-width: 768px) {
     .xp-card {
         grid-template-columns: 1fr;
@@ -78,13 +80,5 @@
     .xp-tab-2 {
         grid-column: 1;
         grid-row: 3;
-    }
-}
-
-/* ---------- Tamanho máximo --------------- */
-
-@media only screen and (min-width: 1280px) {
-    .xp-card {
-        grid-template-columns: 600px 600px;
     }
 }

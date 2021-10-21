@@ -1,236 +1,412 @@
 <!DOCTYPE html>
-<html lang="pr-br">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./src/styles/main.css">
+    <link rel="stylesheet" href="./src/styles/tabs.css">
+    <link rel="stylesheet" href="./src/styles/hello.css">
+    <link rel="stylesheet" href="./src/styles/xp.css">
+    <link rel="stylesheet" href="./src/styles/prj.css">
     <link rel="stylesheet" href="./src/styles/timeline.css">
     <title>João Araya</title>
 </head>
 
 <body>
-    <div class="sobre">
-        <div id="2012" class="tragetoria">
-            <div class="year-left">
-                <img class="year-photo" src="./src/img/img-2012.jpg" alt="2012">
+    <div class="container">
+        <div class="hello">
+            <div class="hello-pic">
+                <img src="../src/img/img-perfil.jpg" alt="foto de perfil">
             </div>
-            <div class="year-right">
-                <h1 class="year-title">2012</h1>
-            </div>
-            <div class="point"></div>
-            <div class="line"></div>
-            <div class="topic">
-                <p>• Blogger</p>
-                <p>• Tutoriais do S40 Editor</p>
-            </div>
-            <div class="comment">
-                <p>Minha tragetória se iniciou aqui, quando era apaixonado por celulares da Nokia Series 40.
-                </p>
-                <p>Encontrei o Blogger para publicar meus tutoriais de como deixar o sistema dos celulares
-                    mais personalizados.</p>
-            </div>
-        </div>
-
-        <div id="2013" class="tragetoria">
-            <div class="year-left">
-                <h1 class="year-title">2013</h1>
-            </div>
-            <div class="point"></div>
-            <div class="line"></div>
-            <div class="topic">
-                <p>• HTML e CSS</p>
-                <p>• Modificação de Firmwares</p>
-                <p>• Temas personalizados</p>
-                <p>• Flash Lite</p>
-            </div>
-            <div class="comment">
-                <p>Quando comecei a personalizar e
-                    melhorar as páginas do Blogger, conheci
-                    o HTML e o CSS.
-                </p>
-                <p>Neste ano começei a criar as minhas
-                    próprias modificações, com ícones
-                    dinâmicos em Gif e Flash Lite,
-                    inspirados nas Lives Tiles do Windows.</p>
-                <p>Publiquei uma página exclusiva para
-                    baixar os temas, wallpapers dinâmicos
-                    e aplicativos raros à parte da "CFW".</p>
+            <div class="hello-cards">
+                <div class="hello-main">
+                    <h1>Olá! me chamo <strong>João Araya,</strong> como vai?</h1>
+                    <div class="hello-contact">
+                        <a id="link-mail-large" title="E-mail" href="mailto:joaoaraya7@gmail.com">
+                            <strong>joaoaraya7</strong>@gmail.com
+                        </a>
+                        <a id="link-mail" title="E-mail" href="mailto:joaoaraya7@gmail.com"></a>
+                        <a id="link-linkedin" title="LinkedIn" href="https://www.linkedin.com/in/joaofarnumaraya/"
+                            target="_blank"></a>
+                        <a id="link-github" title="GitHub" href="https://github.com/joaoaraya" target="_blank"></a>
+                        <a id="link-dribbble" title="Dribbble" href="https://dribbble.com/joaoaraya"
+                            target="_blank"></a>
+                    </div>
+                </div>
+                <div class="hello-desc">
+                    <p>Abaixo lhe apresento um pouco mais sobre mim</p>
+                </div>
             </div>
         </div>
 
-        <div id="2014" class="tragetoria">
-            <div class="year-left">
-                <img class="year-photo" src="./src/img/img-2014.jpg" alt="2014">
+        <div class="tabs">
+            <button class="tablinks btn-xp" onclick="openTab(event, 'xp')" id="defaultOpen"><i
+                    class="material-icons nav__icon">star_rate</i>Experiência</button>
+            <button class="tablinks btn-prj" onclick="openTab(event, 'prj')"><i
+                    class="material-icons nav__icon">code</i>Projetos</button>
+            <button class="tablinks btn-timeline" onclick="openTab(event, 'timeline')"><i
+                    class="material-icons nav__icon">fast_rewind</i>Tragetória</button>
+        </div>
+
+        <div id="xp" class="tabcontent">
+            <div id="desenvolvedor" class="xp-card">
+                <div class="xp-title">
+                    <h1>Desenvolvedor</h1>
+                </div>
+                <div class="xp-tab-1">
+                    <div class="xp-item">
+                        <img src="./src/icons/ico-android.png" alt="icone">
+                        <span>Aplicativos Android</span>
+                    </div>
+                    <div class="xp-item">
+                        <img src="./src/icons/ico-web.png" alt="icone">
+                        <span>Websites responsivos</span>
+                    </div>
+                    <div class="xp-item">
+                        <img src="./src/icons/ico-interface.png" alt="icone">
+                        <span>Interfaces</span>
+                    </div>
+                </div>
+                <div class="xp-tab-2">
+                    <div class="xp-item">
+                        <img src="./src/icons/ico-jogos.png" alt="icone">
+                        <span>Jogos 2D</span>
+                    </div>
+                    <div class="xp-item">
+                        <img src="./src/icons/ico-multiplayer.png" alt="icone">
+                        <span>Jogos Multiplayer</span>
+                    </div>
+                    <div class="xp-item">
+                        <img src="./src/icons/ico-api.png" alt="icone">
+                        <span>APIs</span>
+                    </div>
+                </div>
             </div>
-            <div class="year-right">
-                <h1 class="year-title">2014</h1>
+
+            <div id="programador" class="xp-card">
+                <div class="xp-title">
+                    <h1>Programador</h1>
+                </div>
+                <div class="xp-tab-1">
+                    <div class="xp-item">
+                        <img src="./src/icons/ico-lang.png" alt="icone">
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="xp-item">
+                        <img src="./src/icons/ico-lang.png" alt="icone">
+                        <span>GML</span>
+                    </div>
+                    <div class="xp-item">
+                        <img src="./src/icons/ico-lang.png" alt="icone">
+                        <span>C, C#</span>
+                    </div>
+                </div>
+                <div class="xp-tab-2">
+                    <div class="xp-item">
+                        <img src="./src/icons/ico-db.png" alt="icone">
+                        <span>SQL, NoSQL</span>
+                    </div>
+                    <div class="xp-item">
+                        <img src="./src/icons/ico-react.png" alt="icone">
+                        <span>Node, React</span>
+                    </div>
+                </div>
             </div>
-            <div class="point"></div>
-            <div class="line"></div>
-            <div class="topic">
-                <p>• Design</p>
-                <p>• Programação de jogos</p>
-                <p>• Game Maker Studio</p>
-            </div>
-            <div class="comment">
-                <p>Resolvi aprender programação do zero
-                    assistindo tutoriais no Youtube,
-                    para dar vida aos jogos que desenhava.
-                </p>
-                <p>Meu primeiro jogo foi concluído após
-                    1 ano e 2 meses de desenvolvimento,
-                    estudos e muitos testes.</p>
+
+            <div id="designer" class="xp-card">
+                <div class="xp-title">
+                    <h1>Designer</h1>
+                </div>
+                <div class="xp-tab-1">
+                    <div class="xp-item">
+                        <img src="./src/icons/ico-css.png" alt="icone">
+                        <span>CSS, SCSS</span>
+                    </div>
+                    <div class="xp-item">
+                        <img src="./src/icons/ico-cursor.png" alt="icone">
+                        <span>Figma, Framer</span>
+                    </div>
+                    <div class="xp-item">
+                        <img src="./src/icons/ico-cursor.png" alt="icone">
+                        <span>Adobe Photoshop</span>
+                    </div>
+                    <div class="xp-item">
+                        <img src="./src/icons/ico-cursor.png" alt="icone">
+                        <span>Adobe Ilustrator</span>
+                    </div>
+                </div>
+                <div class="xp-tab-2">
+                    <div class="xp-item">
+                        <img src="./src/icons/ico-edit.png" alt="icone">
+                        <span>Wireframe</span>
+                    </div>
+                    <div class="xp-item">
+                        <img src="./src/icons/ico-interface.png" alt="icone">
+                        <span>Prototipagem</span>
+                    </div>
+                    <div class="xp-item">
+                        <img src="./src/icons/ico-simbolo.png" alt="icone">
+                        <span>Logo, identidade visual</span>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div id="2015" class="tragetoria">
-            <div class="year-left">
-                <h1 class="year-title">2015, 2016</h1>
+        <div id="prj" class="tabcontent">
+            <div class="prj-card">
+                <div class="prj-preview prj-left">
+                    <img src="../src/img/img-2012.jpg" alt="previa">
+                </div>
+                <div class="prj-actions prj-right">
+                    <h1>Fast Drink</h1>
+                    <h2>interface mobile</h2>
+                    <span>Aplicativo delivery de bebidas, de arrastar os produtos para o carrinho.</span>
+                    <div class="prj-btn">
+                        <input type="button" value="IR P/ O APP">
+                    </div>
+                </div>
             </div>
-            <div class="point"></div>
-            <div class="line"></div>
-            <div class="topic">
-                <p>• Publicação na Google Play</p>
-                <p>• Dev Blogs</p>
-                <p>• Novos jogos</p>
+
+            <div class="prj-card">
+                <div class="prj-preview prj-right">
+                    <img src="../src/img/img-2012.jpg" alt="previa">
+                </div>
+                <div class="prj-actions prj-left">
+                    <h1>Fast Drink</h1>
+                    <h2>interface mobile</h2>
+                    <span>Aplicativo delivery de bebidas, de arrastar os produtos para o carrinho.</span>
+                    <div class="prj-btn">
+                        <input type="button" value="IR P/ O APP">
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div id="2017" class="tragetoria">
-            <div class="year-left">
-                <img class="year-photo" src="./src/img/img-2017.jpg" alt="2017">
+        <div id="timeline" class="tabcontent">
+            <div id="2012" class="tragetoria">
+                <div class="year-left">
+                    <img class="year-photo" src="./src/img/img-2012.jpg" alt="2012">
+                </div>
+                <div class="year-right">
+                    <h1 class="year-title">2012</h1>
+                </div>
+                <div class="point"></div>
+                <div class="line"></div>
+                <div class="topic">
+                    <p>• Blogger</p>
+                    <p>• Tutoriais do S40 Editor</p>
+                </div>
+                <div class="comment">
+                    <p>Minha tragetória se iniciou aqui, quando era apaixonado por celulares da Nokia Series 40.
+                    </p>
+                    <p>Encontrei o Blogger para publicar meus tutoriais de como deixar o sistema dos celulares
+                        mais personalizados.</p>
+                </div>
             </div>
-            <div class="year-right">
-                <h1 class="year-title">2017</h1>
+
+            <div id="2013" class="tragetoria">
+                <div class="year-left">
+                    <h1 class="year-title">2013</h1>
+                </div>
+                <div class="point"></div>
+                <div class="line"></div>
+                <div class="topic">
+                    <p>• HTML e CSS</p>
+                    <p>• Modificação de Firmwares</p>
+                    <p>• Temas personalizados</p>
+                    <p>• Flash Lite</p>
+                </div>
+                <div class="comment">
+                    <p>Quando comecei a personalizar e
+                        melhorar as páginas do Blogger, conheci
+                        o HTML e o CSS.
+                    </p>
+                    <p>Neste ano começei a criar as minhas
+                        próprias modificações, com ícones
+                        dinâmicos em Gif e Flash Lite,
+                        inspirados nas Lives Tiles do Windows.</p>
+                    <p>Publiquei uma página exclusiva para
+                        baixar os temas, wallpapers dinâmicos
+                        e aplicativos raros à parte da "CFW".</p>
+                </div>
             </div>
-            <div class="point"></div>
-            <div class="line"></div>
-            <div class="topic">
-                <p>• Primeira Etec</p>
-                <p>• Logística</p>
-                <p>• Aplicativo Delivery</p>
-                <p>• Entrevista para TV</p>
+
+            <div id="2014" class="tragetoria">
+                <div class="year-left">
+                    <img class="year-photo" src="./src/img/img-2014.jpg" alt="2014">
+                </div>
+                <div class="year-right">
+                    <h1 class="year-title">2014</h1>
+                </div>
+                <div class="point"></div>
+                <div class="line"></div>
+                <div class="topic">
+                    <p>• Design</p>
+                    <p>• Programação de jogos</p>
+                    <p>• Game Maker Studio</p>
+                </div>
+                <div class="comment">
+                    <p>Resolvi aprender programação do zero
+                        assistindo tutoriais no Youtube,
+                        para dar vida aos jogos que desenhava.
+                    </p>
+                    <p>Meu primeiro jogo foi concluído após
+                        1 ano e 2 meses de desenvolvimento,
+                        estudos e muitos testes.</p>
+                </div>
             </div>
-            <div class="comment">
-                <p>Neste ano, passei no vestibular da
-                    escola técnica do estado de São Paulo
-                    para estudar Logística.
-                </p>
-                <p>Desenvolvi um aplicativo delivery
-                    de bebidas, com funções de arrastar e
-                    soltar as garrafas no carrinho, para uma
-                    feira de profissões na Etec. </p>
-                <p>Rolou até uma entrevista sobre o app,
-                    para o canal de televisão local, em
-                    nosso estande de apresentação.</p>
-                <p>Apliquei o conceito do funcionamento
-                    do sistema em um trabalho de equipe,
-                    em forma de maquete.</p>
+
+            <div id="2015" class="tragetoria">
+                <div class="year-left">
+                    <h1 class="year-title">2015, 2016</h1>
+                </div>
+                <div class="point"></div>
+                <div class="line"></div>
+                <div class="topic">
+                    <p>• Publicação na Google Play</p>
+                    <p>• Dev Blogs</p>
+                    <p>• Novos jogos</p>
+                </div>
+            </div>
+
+            <div id="2017" class="tragetoria">
+                <div class="year-left">
+                    <img class="year-photo" src="./src/img/img-2017.jpg" alt="2017">
+                </div>
+                <div class="year-right">
+                    <h1 class="year-title">2017</h1>
+                </div>
+                <div class="point"></div>
+                <div class="line"></div>
+                <div class="topic">
+                    <p>• Primeira Etec</p>
+                    <p>• Logística</p>
+                    <p>• Aplicativo Delivery</p>
+                    <p>• Entrevista para TV</p>
+                </div>
+                <div class="comment">
+                    <p>Neste ano, passei no vestibular da
+                        escola técnica do estado de São Paulo
+                        para estudar Logística.
+                    </p>
+                    <p>Desenvolvi um aplicativo delivery
+                        de bebidas, com funções de arrastar e
+                        soltar as garrafas no carrinho, para uma
+                        feira de profissões na Etec. </p>
+                    <p>Rolou até uma entrevista sobre o app,
+                        para o canal de televisão local, em
+                        nosso estande de apresentação.</p>
+                    <p>Apliquei o conceito do funcionamento
+                        do sistema em um trabalho de equipe,
+                        em forma de maquete.</p>
+                </div>
+            </div>
+
+            <div id="2018" class="tragetoria">
+                <div class="year-left">
+                    <img class="year-photo" src="./src/img/img-2018.jpg" alt="2018">
+                </div>
+                <div class="year-right">
+                    <h1 class="year-title">2018</h1>
+                </div>
+                <div class="point"></div>
+                <div class="line"></div>
+                <div class="topic">
+                    <p>• Projeto: Sonic SMS Remake</p>
+                    <p>• Segunda Etec</p>
+                    <p>• Desenvolvimento de Sistemas</p>
+                    <p>• JavaScript, C# e SQL</p>
+                </div>
+                <div class="comment">
+                    <p>Recriar o meu jogo favorito (Sonic 1
+                        de Master System) para o Android, se
+                        tornou um projeto real.
+                    </p>
+                    <p>Fui estudar o que eu mais avama!
+                        Programação, sistemas e aplicativos...</p>
+                </div>
+            </div>
+
+            <div id="2019" class="tragetoria">
+                <div class="year-left">
+                    <img class="year-photo" src="./src/img/img-2019.jpg" alt="2019">
+                </div>
+                <div class="year-right">
+                    <h1 class="year-title">2019</h1>
+                </div>
+                <div class="point"></div>
+                <div class="line"></div>
+                <div class="topic">
+                    <p>• Interfaces no Figma</p>
+                    <p>• Rede Social: Grillo</p>
+                    <p>• Administração</p>
+                    <p>• Distros Linux</p>
+                    <p>• Meu jogo na SAGE 2019</p>
+                    <p>• Estande do meu jogo na Etec</p>
+                    <p>• 1º lugar no Hackathon</p>
+                </div>
+                <div class="comment">
+                    <p>Em meu 2º TCC, foi desenvovlvido uma
+                        rede social, em React, para músicos
+                        iniciantes divulgarem seus trabalhos e
+                        serem visto para novas oportunidades.
+                    </p>
+                    <p>O nome Grillo foi inspirado no mesmo,
+                        que é livre para “cantar” por onde passa.
+                    </p>
+                    <p>Neste ano, complementei meus estudos
+                        fazendo um semestre de Adm. e Suporte
+                        em Informatica, no segundo período.
+                    </p>
+                    <p>Após publicar meu 1º fã Game do Sonic,
+                        fui convidado para participar de um
+                        evento online, organizado nos EUA, para
+                        divulgar o jogo na pagina da SAGE 2019.
+                    </p>
+                </div>
+            </div>
+
+            <div id="2020" class="tragetoria">
+                <div class="year-left">
+                    <h1 class="year-title">2020</h1>
+                </div>
+                <div class="point"></div>
+                <div class="line"></div>
+                <div class="topic">
+                    <p>• Projeto: Sonic 2 SMS Remake</p>
+                    <p>• Meu jogo na SAGE 2020</p>
+                    <p>• Design para Marketing</p>
+                </div>
+                <div class="comment">
+                    <p>No segundo ano consecutivo participei
+                        do evento da SAGE, após concluir
+                        meu 2º fã Game de Sonic (Sonic 2 de
+                        Master System).
+                    </p>
+                    <p>Encontrei meu primeiro emprego como
+                        Designer Gráfico para Marketing em
+                        Redes Sociais.
+                    </p>
+                </div>
+            </div>
+
+            <div id="2021" class="tragetoria">
+                <div class="year-left">
+                    <h1 class="year-title">2021</h1>
+                </div>
+                <div class="point"></div>
+                <div class="line"></div>
+                <div class="topic">
+                    <p>• Jogos em Multiplayer</p>
+                    <p>• Node, React, SCSS e NoSQL</p>
+                </div>
             </div>
         </div>
-
-        <div id="2018" class="tragetoria">
-            <div class="year-left">
-                <img class="year-photo" src="./src/img/img-2018.jpg" alt="2018">
-            </div>
-            <div class="year-right">
-                <h1 class="year-title">2018</h1>
-            </div>
-            <div class="point"></div>
-            <div class="line"></div>
-            <div class="topic">
-                <p>• Projeto: Sonic SMS Remake</p>
-                <p>• Segunda Etec</p>
-                <p>• Desenvolvimento de Sistemas</p>
-                <p>• JavaScript, C# e SQL</p>
-            </div>
-            <div class="comment">
-                <p>Recriar o meu jogo favorito (Sonic 1
-                    de Master System) para o Android, se
-                    tornou um projeto real.
-                </p>
-                <p>Fui estudar o que eu mais avama!
-                    Programação, sistemas e aplicativos...</p>
-            </div>
-        </div>
-
-        <div id="2019" class="tragetoria">
-            <div class="year-left">
-                <img class="year-photo" src="./src/img/img-2019.jpg" alt="2019">
-            </div>
-            <div class="year-right">
-                <h1 class="year-title">2019</h1>
-            </div>
-            <div class="point"></div>
-            <div class="line"></div>
-            <div class="topic">
-                <p>• Interfaces no Figma</p>
-                <p>• Rede Social: Grillo</p>
-                <p>• Administração</p>
-                <p>• Distros Linux</p>
-                <p>• Meu jogo na SAGE 2019</p>
-                <p>• Estande do meu jogo na Etec</p>
-                <p>• 1º lugar no Hackathon</p>
-            </div>
-            <div class="comment">
-                <p>Em meu 2º TCC, foi desenvovlvido uma
-                    rede social, em React, para músicos
-                    iniciantes divulgarem seus trabalhos e
-                    serem visto para novas oportunidades.
-                </p>
-                <p>O nome Grillo foi inspirado no mesmo,
-                    que é livre para “cantar” por onde passa.
-                </p>
-                <p>Neste ano, complementei meus estudos
-                    fazendo um semestre de Adm. e Suporte
-                    em Informatica, no segundo período.
-                </p>
-                <p>Após publicar meu 1º fã Game do Sonic,
-                    fui convidado para participar de um
-                    evento online, organizado nos EUA, para
-                    divulgar o jogo na pagina da SAGE 2019.
-                </p>
-            </div>
-        </div>
-
-        <div id="2020" class="tragetoria">
-            <div class="year-left">
-                <h1 class="year-title">2020</h1>
-            </div>
-            <div class="point"></div>
-            <div class="line"></div>
-            <div class="topic">
-                <p>• Projeto: Sonic 2 SMS Remake</p>
-                <p>• Meu jogo na SAGE 2020</p>
-                <p>• Design para Marketing</p>
-            </div>
-            <div class="comment">
-                <p>No segundo ano consecutivo participei
-                    do evento da SAGE, após concluir
-                    meu 2º fã Game de Sonic (Sonic 2 de
-                    Master System).
-                </p>
-                <p>Encontrei meu primeiro emprego como
-                    Designer Gráfico para Marketing em
-                    Redes Sociais.
-                </p>
-            </div>
-        </div>
-
-        <div id="2021" class="tragetoria">
-            <div class="year-left">
-                <h1 class="year-title">2021</h1>
-            </div>
-            <div class="point"></div>
-            <div class="line"></div>
-            <div class="topic">
-                <p>• Jogos em Multiplayer</p>
-                <p>• Node, React, SCSS e NoSQL</p>
-            </div>
-        </div>
-
     </div>
+
+    <script src="./src/functions/tabs.js"></script>
 </body>
 
 </html>

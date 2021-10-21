@@ -1,11 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 * {
     font-family: 'Source Code Pro', monospace;
-    font-style: normal;
-    font-weight: normal;
-    transition: 0.3s;
+    transition: 0.1s;
 }
 
 body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
     background: #E7EAED;
+}
+
+.container {
+    max-width: 1024px;
+}
+
+/* ---------- Mobile --------------- */
+
+@media screen and (max-device-width: 768px), screen and (max-width: 768px) {
+    .container {
+        position: relative;
+        top: -45px;
+    }
+    body {
+        display: inline;
+    }
 }

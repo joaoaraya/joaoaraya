@@ -1,0 +1,181 @@
+.hello {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    column-gap: 24px;
+    margin: 48px 96px 50px 96px;
+}
+
+.hello-pic {
+    grid-column: 1;
+}
+
+.hello-pic img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.hello-cards {
+    grid-column: 2;
+}
+
+.hello-main {
+    padding: 25px 40px 20px 40px;
+    background: #FFFFFF;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-content: end;
+}
+
+.hello-main h1 {
+    grid-column: 1;
+    grid-row: 1;
+    margin: 0;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: normal;
+    color: #727379;
+}
+
+.hello-contact {
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: end;
+}
+
+#link-mail-large {
+    font-size: 20px;
+    color: #727379;
+    text-decoration: none;
+    padding: 8px 20px 8px 54px;
+    background: url("../icons/ico-mail.png") no-repeat;
+    background-position: 16px center;
+    background-color: #E7EAED;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+#link-mail-large:hover {
+    color: #FFFFFF;
+    background: url("../icons/ico-mail-hover.png") no-repeat;
+    background-position: 16px center;
+    background-color: #F45769;
+}
+
+#link-mail, #link-linkedin, #link-github, #link-dribbble {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    position: relative;
+    top: 12px;
+}
+
+#link-mail {
+    background: url("../icons/ico-mail-small.png") no-repeat;
+}
+
+#link-mail:hover {
+    background: url("../icons/ico-mail-small-hover.png") no-repeat;
+}
+
+#link-mail {
+    display: none;
+}
+
+#link-linkedin {
+    background: url("../icons/ico-linkedin.png") no-repeat;
+}
+
+#link-linkedin:hover {
+    background: url("../icons/ico-linkedin-hover.png") no-repeat;
+}
+
+#link-github {
+    background: url("../icons/ico-github.png") no-repeat;
+}
+
+#link-github:hover {
+    background: url("../icons/ico-github-hover.png") no-repeat;
+}
+
+#link-dribbble {
+    background: url("../icons/ico-dribbble.png") no-repeat;
+}
+
+#link-dribbble:hover {
+    background: url("../icons/ico-dribbble-hover.png") no-repeat;
+}
+
+.hello-desc {
+    font-size: 24px;
+    color: #727379;
+    margin: 20px 20% 0 0;
+    padding: 15px 40px;
+    background: #D9DDE0;
+    border-radius: 30px;
+}
+
+.hello-desc p {
+    margin: 0;
+}
+
+/* ---------- Mobile --------------- */
+
+@media screen and (max-device-width: 910px), screen and (max-width: 910px) {
+    #link-mail {
+        display: inline-block;
+    }
+    #link-mail-large {
+        display: none;
+    }
+}
+
+@media screen and (max-device-width: 768px), screen and (max-width: 768px) {
+    .hello {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        margin: 8px 8px 50px 8px;
+    }
+    .hello-pic {
+        z-index: 1;
+        grid-column: 1;
+        grid-row: 1;
+        justify-self: center;
+        position: relative;
+        top: 48px;
+    }
+    .hello-pic img {
+        width: 40vw;
+        height: 40vw;
+        border: 8px solid #E7EAED;
+        border-radius: 50%;
+    }
+    .hello-cards {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .hello-main {
+        padding: 60px 20px 32px 20px;
+        border-radius: 20px;
+    }
+    .hello-main h1 {
+        font-size: 26px;
+        text-align: center;
+    }
+    .hello-contact {
+        display: flex;
+        gap: 5vw;
+        justify-self: center;
+        padding-top: 20px;
+    }
+    .hello-desc {
+        font-size: 20px;
+        padding: 12px 24px;
+        margin: 12px 0 0 0;
+        border-radius: 20px;
+    }
+}

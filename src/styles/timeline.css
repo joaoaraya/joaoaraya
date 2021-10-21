@@ -9,14 +9,14 @@
 .year-left {
     grid-column: 1;
     grid-row: 1;
-    margin: 10px 40px;
+    margin: 0 40px 0 8px;
     justify-self: end;
 }
 
 .year-right {
     grid-column: 3;
     grid-row: 1;
-    margin: 10px 40px;
+    margin: 0 8px 0 40px;
 }
 
 .year-photo {
@@ -27,6 +27,8 @@
 
 .year-title {
     font-size: 50px;
+    font-style: normal;
+    font-weight: normal;
     color: #6CA2F3;
     margin: 0;
 }
@@ -60,7 +62,7 @@
 .topic p {
     font-size: 25px;
     color: #000000;
-    margin: 10px 40px;
+    margin: 8px 8px 8px 40px;
 }
 
 .comment {
@@ -74,14 +76,14 @@
     background: #6CA2F3;
     padding: 12px 30px;
     border-radius: 20px;
-    margin: 20px 26px;
+    margin: 20px 8px 20px 26px;
 }
 
 /* ---------- Mobile --------------- */
 
 @media screen and (max-device-width: 768px), screen and (max-width: 768px) {
     .tragetoria {
-        grid-template-columns: 30px 1fr;
+        grid-template-columns: 40px 1fr;
         grid-template-rows: auto auto auto auto;
         margin-bottom: 32px;
     }
@@ -89,11 +91,12 @@
         grid-column: 2;
         grid-row: 1;
         justify-self: left;
+        margin: 8px;
     }
     .year-right {
         grid-column: 2;
         grid-row: 2;
-        margin: 5px;
+        margin: 8px;
     }
     .year-photo {
         width: 100%;
@@ -116,7 +119,7 @@
     }
     .topic p {
         font-size: 20px;
-        margin: 5px;
+        margin: 8px;
     }
     .comment {
         grid-column: 2;
@@ -124,14 +127,6 @@
     }
     .comment p {
         font-size: 16px;
-        margin: 10px 5px;
-    }
-}
-
-/* ---------- Tamanho máximo --------------- */
-
-@media only screen and (min-width: 1280px) {
-    .tragetoria {
-        grid-template-columns: 585px 30px 585px;
+        margin: 10px 8px;
     }
 }
