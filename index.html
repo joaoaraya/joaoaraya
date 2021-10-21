@@ -42,13 +42,15 @@
         </div>
 
         <div class="tabs">
-            <button class="tablinks btn-xp" onclick="openTab(event, 'xp')" id="defaultOpen"><i
+            <button class="tablinks btn-xp" onclick="openTab(event, 'xp', 'Experiência')" id="defaultOpen"><i
                     class="material-icons nav__icon">star_rate</i>Experiência</button>
-            <button class="tablinks btn-prj" onclick="openTab(event, 'prj')"><i
+            <button class="tablinks btn-prj" onclick="openTab(event, 'prj', 'Projetos')"><i
                     class="material-icons nav__icon">code</i>Projetos</button>
-            <button class="tablinks btn-timeline" onclick="openTab(event, 'timeline')"><i
+            <button class="tablinks btn-timeline" onclick="openTab(event, 'timeline', 'Tragetória')"><i
                     class="material-icons nav__icon">fast_rewind</i>Tragetória</button>
         </div>
+
+        <div class="tab-title"></div>
 
         <div id="xp" class="tabcontent">
             <div id="desenvolvedor" class="xp-card">

@@ -66,6 +66,10 @@
     animation: fadeEffect 1s;
 }
 
+.tab-title {
+    display: none;
+}
+
 /* Efeito Fade-In */
 
 @-webkit-keyframes fadeEffect {
@@ -85,6 +89,8 @@
         opacity: 1;
     }
 }
+
+/* ---------------- Mobile Navbar -------------------- */
 
 @media screen and (max-device-width: 768px), screen and (max-width: 768px) {
     .tabs {
@@ -123,5 +129,18 @@
     }
     .tabcontent {
         margin-bottom: 42px;
+    }
+    /* Titulo das tabs */
+    .tab-title {
+        margin: 32px 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 26px;
+        font-weight: bold;
+        max-height: 50px;
+        border-radius: 15px;
+        color: #838c9e;
+        border: 2px solid #838c9e;
     }
 }
