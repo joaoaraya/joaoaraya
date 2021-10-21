@@ -4,7 +4,7 @@
     grid-template-rows: auto;
     align-items: center;
     justify-content: center;
-    margin: 16px 8px;
+    margin: 32px 8px;
 }
 
 .prj-preview, .prj-actions {
@@ -23,7 +23,7 @@
 
 .prj-card img {
     width: 100%;
-    max-height: 300px;
+    max-height: 332px;
     border-radius: 20px;
 }
 
@@ -65,7 +65,7 @@
     grid-row: 3;
     font-weight: normal;
     font-size: 20px;
-    color: #7B909B;
+    color: #727379;
 }
 
 .prj-btn {
