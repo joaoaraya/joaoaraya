@@ -66,7 +66,7 @@
     background-color: #F45769;
 }
 
-#link-mail, #link-linkedin, #link-github, #link-dribbble {
+#link-mail, #link-linkedin, #link-github, #link-medium {
     width: 40px;
     height: 40px;
     display: inline-block;
@@ -102,12 +102,12 @@
     background: url("../icons/ico-github-hover.png") no-repeat;
 }
 
-#link-dribbble {
-    background: url("../icons/ico-dribbble.png") no-repeat;
+#link-medium {
+    background: url("../icons/ico-medium.png") no-repeat;
 }
 
-#link-dribbble:hover {
-    background: url("../icons/ico-dribbble-hover.png") no-repeat;
+#link-medium:hover {
+    background: url("../icons/ico-medium-hover.png") no-repeat;
 }
 
 .hello-desc {
