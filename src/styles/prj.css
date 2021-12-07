@@ -1,3 +1,13 @@
+:root {
+    --prj-theme: rgb(28, 144, 213);
+    --prj-title-font: rgb(34, 39, 46);
+}
+
+.light-theme:root {
+    --prj-theme: rgb(38, 119, 165);
+    --prj-title-font: rgb(255, 255, 255);
+}
+
 .prj-card {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -47,7 +57,7 @@
     grid-row: 1;
     font-weight: bold;
     font-size: 35px;
-    color: #2677A5;
+    color: var(--prj-theme);
 }
 
 .prj-card h2 {
@@ -57,15 +67,15 @@
     border-radius: 6px;
     font-weight: bold;
     font-size: 18px;
-    color: #FFFFFF;
-    background: #2677A5;
+    color: var(--prj-title-font);
+    background: var(--prj-theme);
 }
 
 .prj-card span {
     grid-row: 3;
     font-weight: normal;
     font-size: 20px;
-    color: #727379;
+    color: var(--body-font);
 }
 
 .prj-btn {
@@ -77,20 +87,20 @@
     width: 250px;
     height: 45px;
     box-sizing: border-box;
-    border: 2px solid #2677A5;
+    border: 2px solid var(--prj-theme);
     border-radius: 10px;
     font-weight: bold;
     font-size: 15px;
     line-height: 20px;
     text-align: center;
     cursor: pointer;
-    color: #2677A5;
+    color: var(--prj-theme);
     background-color: rgba(0, 0, 0, 0);
 }
 
 .prj-btn input:hover {
-    background: #2677A5;
-    color: white;
+    background: var(--prj-theme);
+    color: rgb(255, 255, 255);
 }
 
 /* ---------- Mobile (Celular) --------------- */
@@ -99,30 +109,37 @@
     .prj-card {
         grid-template-columns: 1fr;
     }
+
     .prj-preview, .prj-actions {
         grid-column: 1;
         grid-row: auto;
     }
+
     .prj-preview {
         justify-self: center;
     }
+
     .prj-actions {
         padding: 0 10px 10px 10px;
     }
+
     .prj-card img {
         width: 90vw;
         max-height: 100%;
         transition: 0s;
     }
+
     .prj-card h1 {
         font-size: 26px;
     }
+
     .prj-card h2 {
         padding: 4px 16px;
         max-width: 180px;
         font-weight: bold;
         font-size: 16px;
     }
+
     .prj-btn input {
         width: 90vw;
     }
@@ -134,38 +151,46 @@
     .prj-card {
         grid-template-columns: 1fr;
     }
+
     .prj-preview, .prj-actions {
         grid-column: 1;
         grid-row: auto;
     }
+
     .prj-preview {
         justify-self: center;
     }
+
     .prj-actions {
         padding: 10px;
     }
+
     .prj-card img {
         width: 94vw;
         max-height: 100%;
         transition: 0s;
     }
+
     .prj-card h1 {
         font-size: 48px;
     }
+
     .prj-card h2 {
         padding: 4px 16px;
         max-width: 300px;
         font-weight: bold;
         font-size: 26px;
     }
+
     .prj-card span {
         padding-top: 16px;
         font-size: 32px;
     }
+
     .prj-btn input {
         width: 90vw;
         height: 80px;
         font-size: 26px;
-        border: 4px solid #2677A5;
+        border: 4px solid var(--prj-theme);
     }
 }

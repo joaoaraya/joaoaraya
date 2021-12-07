@@ -1,4 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+:root {
+    --body-bg: #22272e;
+    --body-font: rgb(117, 131, 145);
+}
+
+.light-theme:root {
+    --body-bg: rgb(231, 234, 237);
+    --body-font: rgb(114, 115, 121);
+}
+
 * {
     font-family: 'Source Code Pro', monospace;
     transition: 0.1s;
@@ -8,7 +19,7 @@ body {
     margin: 0;
     display: flex;
     justify-content: center;
-    background: #E7EAED;
+    background: var(--body-bg);
 }
 
 .container {
@@ -22,6 +33,7 @@ body {
         position: relative;
         top: -45px;
     }
+
     body {
         display: inline;
     }

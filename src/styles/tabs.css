@@ -1,3 +1,21 @@
+:root {
+    --tab-xp-theme: rgb(244, 87, 105);
+    --tab-prj-theme: rgb(28, 144, 213);
+    --tab-timeline-theme: rgb(108, 162, 243);
+    --navbar-theme: rgb(150, 222, 255);
+    --navbar-bg: rgb(74, 83, 95);
+    --navbar-font: rgb(148, 157, 167);
+}
+
+.light-theme:root {
+    --tab-xp-theme: rgb(244, 87, 105);
+    --tab-prj-theme: rgb(38, 119, 165);
+    --tab-timeline-theme: rgb(108, 162, 243);
+    --navbar-theme: rgb(244, 87, 105);
+    --navbar-bg: rgb(255, 255, 255);
+    --navbar-font: rgb(157, 160, 170);
+}
+
 .tabs {
     display: flex;
     flex-wrap: wrap;
@@ -28,33 +46,33 @@
 /* Cores dos botões */
 
 .btn-xp {
-    color: #F45769;
-    border: 2px solid #F45769;
+    color: var(--tab-xp-theme);
+    border: 2px solid var(--tab-xp-theme);
 }
 
 .btn-xp:hover, .btn-xp.active {
     color: rgb(255, 255, 255);
-    background-color: #F45769;
+    background-color: var(--tab-xp-theme);
 }
 
 .btn-prj {
-    color: #2677A5;
-    border: 2px solid #2677A5;
+    color: var(--tab-prj-theme);
+    border: 2px solid var(--tab-prj-theme);
 }
 
 .btn-prj:hover, .btn-prj.active {
     color: rgb(255, 255, 255);
-    background-color: #2677A5;
+    background-color: var(--tab-prj-theme);
 }
 
 .btn-timeline {
-    color: #6CA2F3;
-    border: 2px solid #6CA2F3;
+    color: var(--tab-timeline-theme);
+    border: 2px solid var(--tab-timeline-theme);
 }
 
 .btn-timeline:hover, .btn-timeline.active {
     color: rgb(255, 255, 255);
-    background-color: #6CA2F3;
+    background-color: var(--tab-timeline-theme);
 }
 
 /* Tab Content (Pagina dentro das tabs) */
@@ -76,6 +94,7 @@
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -85,6 +104,7 @@
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -101,10 +121,11 @@
         width: 100%;
         height: 64px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        background-color: #ffffff;
+        background-color: var(--navbar-bg);
         display: flex;
         overflow-x: auto;
     }
+
     .tabs button {
         display: flex;
         height: 100%;
@@ -120,16 +141,20 @@
         border: none;
         border-radius: 0;
     }
+
     .btn-xp, .btn-prj, .btn-timeline {
-        color: #9da0aa;
+        color: var(--navbar-font);
     }
+
     .btn-xp:hover, .btn-xp.active, .btn-prj:hover, .btn-prj.active, .btn-timeline:hover, .btn-timeline.active {
-        color: #F45769;
+        color: var(--navbar-theme);
         background-color: transparent;
     }
+
     .tabcontent {
         margin-bottom: 42px;
     }
+
     /* Titulo das tabs */
     .tab-title {
         margin: 32px 10%;
@@ -140,7 +165,7 @@
         font-weight: bold;
         max-height: 50px;
         border-radius: 15px;
-        color: #838c9e;
-        border: 2px solid #838c9e;
+        color: rgb(131, 140, 158);
+        border: 2px solid rgb(131, 140, 158);
     }
 }

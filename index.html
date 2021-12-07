@@ -17,9 +17,11 @@
 
 <body>
     <div class="container">
+
         <div class="hello">
             <div class="hello-pic">
                 <img src="./src/img/img-perfil.jpg" alt="foto de perfil">
+                <button class="theme-switch"></button>
             </div>
             <div class="hello-cards">
                 <div class="hello-main">
@@ -32,8 +34,7 @@
                         <a id="link-linkedin" title="LinkedIn" href="https://www.linkedin.com/in/joaofarnumaraya/"
                             target="_blank"></a>
                         <a id="link-github" title="GitHub" href="https://github.com/joaoaraya" target="_blank"></a>
-                        <a id="link-medium" title="Medium" href="https://medium.com/@joaoaraya"
-                            target="_blank"></a>
+                        <a id="link-medium" title="Medium" href="https://medium.com/@joaoaraya" target="_blank"></a>
                     </div>
                 </div>
                 <div class="hello-desc">
@@ -109,7 +110,7 @@
                 <div class="xp-tab-2">
                     <div class="xp-item">
                         <img src="./src/icons/ico-db.png" alt="icone">
-                        <span>SQL, NoSQL</span>
+                        <span>MySQL, NoSQL</span>
                     </div>
                     <div class="xp-item">
                         <img src="./src/icons/ico-react.png" alt="icone">
@@ -159,15 +160,32 @@
 
         <div id="prj" class="tabcontent">
 
+            <div id="fast-drink" class="prj-card">
+                <div class="prj-preview prj-right">
+                    <img src="./src/img/img-cardapio-facil.png" alt="previa">
+                </div>
+                <div class="prj-actions prj-left">
+                    <h1>Cardápio Fácil</h1>
+                    <h2>React Web App</h2>
+                    <span>Em desenvolvimento com as tecnologias React.js, SCSS e Firebase, esse projeto ajuda
+                        micro/empreendedores que vendem comidas por delivery a divulgarem seu menu de forma rápida,
+                        fácil e grátis, através de um link.</span>
+                    <div class="prj-btn">
+                        <a href="https://github.com/joaoaraya/prj-cardapioFacil" target="_blank"><input type="button"
+                                value="IR P/ O PROJETO"></a>
+                    </div>
+                </div>
+            </div>
+
             <div id="grillo" class="prj-card">
                 <div class="prj-preview prj-left">
                     <img src="./src/img/img-grillo.jpg" alt="previa">
                 </div>
                 <div class="prj-actions prj-right">
                     <h1>Grillo</h1>
-                    <h2>interface mobile</h2>
+                    <h2>Interface Mobile</h2>
                     <span>Projetado no Figma, esse App é uma rede social, para músicos indepentendes divulgarem
-                        seus trabalhos e, pessoas o encontrarem
+                        seus trabalhos e pessoas encontrarem
                         músicos para novos eventos.</span>
                     <div class="prj-btn">
                         <a href="https://www.figma.com/file/pQaMD4aDuJgb61CS6bINi9/Grillo?node-id=2%3A2"
@@ -182,7 +200,7 @@
                 </div>
                 <div class="prj-actions prj-left">
                     <h1>Fast Drink</h1>
-                    <h2>interface mobile</h2>
+                    <h2>Interface Mobile</h2>
                     <span>Feito no Game Maker Studio, esse é um App delivery de bebidas, de arrastar os produtos para o
                         carrinho.</span>
                     <div class="prj-btn">
@@ -360,7 +378,7 @@
                     <p>• Projeto: Sonic SMS Remake</p>
                     <p>• Segunda Etec</p>
                     <p>• Desenvolvimento de Sistemas</p>
-                    <p>• JavaScript, C# e SQL</p>
+                    <p>• JavaScript, C# e MySQL</p>
                 </div>
                 <div class="comment">
                     <p>Recriar o meu jogo favorito (Sonic 1
@@ -450,6 +468,7 @@
     </div>
 
     <script src="./src/functions/tabs.js"></script>
+    <script src="./src/functions/themes.js"></script>
 </body>
 
 </html>

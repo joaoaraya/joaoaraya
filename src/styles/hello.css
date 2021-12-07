@@ -1,3 +1,28 @@
+:root {
+    --main-font-bg: rgb(150, 222, 255);
+    --main-bg: rgb(54, 60, 68);
+    --main-desc-font: rgb(0, 0, 0);
+    --main-desc-bg: rgb(150, 222, 255);
+    --mail-btn-font: rgb(114, 115, 121);
+    --mail-btn-bg: rgb(34, 39, 46);
+    --mail-btn-hover: rgb(244, 87, 105);
+    --theme-ico: url(../icons/ico-sun.svg) no-repeat center;
+    --theme-ico-bg: rgb(54, 60, 68);
+}
+
+.light-theme:root {
+    --main-font-bg: rgb(114, 115, 121);
+    --main-bg: rgb(255, 255, 255);
+    --main-desc-font: rgb(114, 115, 121);
+    --main-desc-bg: rgb(217, 221, 224);
+    --mail-btn-font: rgb(114, 115, 121);
+    --mail-btn-bg: rgb(231, 234, 237);
+    --mail-btn-hover: rgb(244, 87, 105);
+    --theme-ico: url(../icons/ico-moon.svg) no-repeat center;
+
+    --theme-ico-bg: rgb(217, 221, 224);
+}
+
 .hello {
     display: grid;
     grid-template-columns: 120px 1fr;
@@ -9,11 +34,26 @@
 
 .hello-pic {
     grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
 }
 
 .hello-pic img {
     width: 120px;
     height: 120px;
+    border-radius: 50%;
+}
+
+.theme-switch {
+    background: var(--theme-ico);
+    background-size: 24px;
+    background-color: var(--theme-ico-bg);
+    height: 48px;
+    width: 48px;
+    cursor: pointer;
+    border: none;
     border-radius: 50%;
 }
 
@@ -23,7 +63,7 @@
 
 .hello-main {
     padding: 25px 40px 20px 40px;
-    background: #FFFFFF;
+    background: var(--main-bg);
     border-radius: 30px;
     display: grid;
     grid-template-columns: 1fr;
@@ -38,7 +78,7 @@
     font-size: 34px;
     font-style: normal;
     font-weight: normal;
-    color: #727379;
+    color: var(--main-font-bg);
 }
 
 .hello-contact {
@@ -49,21 +89,21 @@
 
 #link-mail-large {
     font-size: 20px;
-    color: #727379;
+    color: var(--mail-btn-font);
     text-decoration: none;
     padding: 8px 20px 8px 54px;
     background: url("../icons/ico-mail.png") no-repeat;
     background-position: 16px center;
-    background-color: #E7EAED;
+    background-color: var(--mail-btn-bg);
     display: inline-block;
     border-radius: 5px;
 }
 
 #link-mail-large:hover {
-    color: #FFFFFF;
+    color: rgb(255, 255, 255);
     background: url("../icons/ico-mail-hover.png") no-repeat;
     background-position: 16px center;
-    background-color: #F45769;
+    background-color: var(--mail-btn-hover);
 }
 
 #link-mail, #link-linkedin, #link-github, #link-medium {
@@ -112,10 +152,10 @@
 
 .hello-desc {
     font-size: 24px;
-    color: #727379;
+    color: var(--main-desc-font);
     margin: 20px 20% 0 0;
     padding: 15px 40px;
-    background: #D9DDE0;
+    background: var(--main-desc-bg);
     border-radius: 30px;
 }
 
@@ -129,6 +169,7 @@
     #link-mail {
         display: inline-block;
     }
+
     #link-mail-large {
         display: none;
     }
@@ -140,6 +181,7 @@
         grid-template-rows: auto auto;
         margin: 8px 8px 50px 8px;
     }
+
     .hello-pic {
         z-index: 1;
         grid-column: 1;
@@ -147,31 +189,48 @@
         justify-self: center;
         position: relative;
         top: 48px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
     }
+
     .hello-pic img {
         width: 40vw;
         height: 40vw;
-        border: 8px solid #E7EAED;
+        border: 8px solid var(--body-bg);
         border-radius: 50%;
     }
+
+    .theme-switch {
+        background-size: 6vw;
+        width: 12vw;
+        height: 12vw;
+        border: 4px solid var(--body-bg);
+    }
+
     .hello-cards {
         grid-column: 1;
         grid-row: 2;
     }
+
     .hello-main {
         padding: 60px 20px 32px 20px;
         border-radius: 20px;
     }
+
     .hello-main h1 {
         font-size: 26px;
         text-align: center;
     }
+
     .hello-contact {
         display: flex;
         gap: 5vw;
         justify-self: center;
         padding-top: 20px;
     }
+
     .hello-desc {
         font-size: 20px;
         padding: 12px 24px;
