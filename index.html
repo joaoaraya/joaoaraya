@@ -26,7 +26,7 @@
             </div>
             <div class="hello-cards">
                 <div class="hello-main">
-                    <h1>Olá! me chamo <strong>João Araya,</strong> como vai?</h1>
+                    <h1>Olá! Sou o <strong>João Araya,</strong> como vai?</h1>
                     <div class="hello-contact">
                         <a id="link-mail-large" title="E-mail" href="mailto:contato@joaoaraya.dev">
                             <strong>contato</strong>@joaoaraya.dev
@@ -39,16 +39,16 @@
                     </div>
                 </div>
                 <div class="hello-desc">
-                    <p>Abaixo lhe apresento um pouco mais sobre mim</p>
+                    <p>Abaixo, poderá conferir um pouco mais sobre mim</p>
                 </div>
             </div>
         </div>
 
         <div class="tabs">
-            <button class="tablinks btn-xp" onclick="openTab(event, 'xp', 'Experiência')" id="defaultOpen"><i
-                    class="material-icons nav__icon">star_rate</i>Experiência</button>
-            <button class="tablinks btn-prj" onclick="openTab(event, 'prj', 'Projetos')"><i
+            <button class="tablinks btn-prj" onclick="openTab(event, 'prj', 'Projetos')" id="defaultOpen"><i
                     class="material-icons nav__icon">code</i>Projetos</button>
+            <button class="tablinks btn-xp" onclick="openTab(event, 'xp', 'Experiência')"><i
+                    class="material-icons nav__icon">star_rate</i>Experiência</button>
             <button class="tablinks btn-timeline" onclick="openTab(event, 'timeline', 'Tragetória')"><i
                     class="material-icons nav__icon">fast_rewind</i>Tragetória</button>
         </div>
@@ -63,7 +63,7 @@
                 <div class="xp-tab-1">
                     <div class="xp-item">
                         <img src="./src/icons/ico-android.png" alt="icone">
-                        <span>Aplicativos Android</span>
+                        <span>Apps Híbridos</span>
                     </div>
                     <div class="xp-item">
                         <img src="./src/icons/ico-web.png" alt="icone">
@@ -97,29 +97,45 @@
                 <div class="xp-tab-1">
                     <div class="xp-item">
                         <img src="./src/icons/ico-lang.png" alt="icone">
-                        <span>JavaScript, TypeScript</span>
-                    </div>
-                    <div class="xp-item">
-                        <img src="./src/icons/ico-lang.png" alt="icone">
                         <span>GML</span>
                     </div>
                     <div class="xp-item">
                         <img src="./src/icons/ico-lang.png" alt="icone">
-                        <span>C, C#</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="xp-item">
+                        <img src="./src/icons/ico-lang.png" alt="icone">
+                        <span>C</span>
+                    </div>
+                    <div class="xp-item">
+                        <img src="./src/icons/ico-db.png" alt="icone">
+                        <span>MySQL</span>
+                    </div>
+                    <div class="xp-item">
+                        <img src="./src/icons/ico-db.png" alt="icone">
+                        <span>Firebase, MongoDB</span>
                     </div>
                 </div>
                 <div class="xp-tab-2">
                     <div class="xp-item">
-                        <img src="./src/icons/ico-db.png" alt="icone">
-                        <span>SQL, NoSQL</span>
-                    </div>
-                    <div class="xp-item">
-                        <img src="./src/icons/ico-db.png" alt="icone">
-                        <span>MySql, Firebase, MongoDB</span>
-                    </div>
-                    <div class="xp-item">
                         <img src="./src/icons/ico-react.png" alt="icone">
-                        <span>Node.JS, React.JS</span>
+                        <span>React</span>
+                    </div>
+                    <div class="xp-item">
+                        <img src="./src/icons/ico-api.png" alt="icone">
+                        <span>TypeScript</span>
+                    </div>
+                    <div class="xp-item">
+                        <img src="./src/icons/ico-api.png" alt="icone">
+                        <span>Node</span>
+                    </div>
+                    <div class="xp-item">
+                        <img src="./src/icons/ico-api.png" alt="icone">
+                        <span>Adonis</span>
+                    </div>
+                    <div class="xp-item">
+                        <img src="./src/icons/ico-api.png" alt="icone">
+                        <span>Express</span>
                     </div>
                 </div>
             </div>
@@ -135,7 +151,7 @@
                     </div>
                     <div class="xp-item">
                         <img src="./src/icons/ico-cursor.png" alt="icone">
-                        <span>Figma, Framer</span>
+                        <span>Figma</span>
                     </div>
                     <div class="xp-item">
                         <img src="./src/icons/ico-cursor.png" alt="icone">
@@ -153,11 +169,11 @@
                     </div>
                     <div class="xp-item">
                         <img src="./src/icons/ico-interface.png" alt="icone">
-                        <span>Prototipagem</span>
+                        <span>Identidade visual</span>
                     </div>
                     <div class="xp-item">
                         <img src="./src/icons/ico-simbolo.png" alt="icone">
-                        <span>Logo, identidade visual</span>
+                        <span>Logotipo</span>
                     </div>
                 </div>
             </div>
@@ -165,29 +181,13 @@
 
         <div id="prj" class="tabcontent">
 
-            <div id="hashtag-blogs" class="prj-card">
-                <div class="prj-preview prj-left">
-                    <img src="./src/img/img-hashtag-blogs.png" alt="previa">
-                </div>
-                <div class="prj-actions prj-right">
-                    <h1>#Blogs</h1>
-                    <h2>React Web App</h2>
-                    <span>Em desenvolvimento com as tecnologias React.js com TypeScript, SASS e Firebase, esse projeto é
-                        focado em criadores de conteúdos e consumidores de novidades! As publicações são marcadas com
-                        hashtags para serem encontradas facilmente pelo buscador.
-                    </span>
-                    <div class="prj-btn">
-                        <a href="https://github.com/joaoaraya/prj-hashtagBlogs" target="_blank"><input type="button"
-                                value="IR P/ O PROJETO"></a>
-                    </div>
-                </div>
-            </div>
+
 
             <div id="cardapio-facil" class="prj-card">
-                <div class="prj-preview prj-right">
+                <div class="prj-preview prj-left">
                     <img src="./src/img/img-cardapio-facil.png" alt="previa">
                 </div>
-                <div class="prj-actions prj-left">
+                <div class="prj-actions prj-right">
                     <h1>Cardápio Fácil</h1>
                     <h2>React Web App</h2>
                     <span>Desenvolvido com as tecnologias React.js com TypeScript, SASS e Firebase, esse projeto ajuda
@@ -200,13 +200,31 @@
                 </div>
             </div>
 
+            <div id="hashtag-blogs" class="prj-card">
+                <div class="prj-preview prj-right">
+                    <img src="./src/img/img-hashtag-blogs.png" alt="previa">
+                </div>
+                <div class="prj-actions prj-left">
+                    <h1>#Blogs</h1>
+                    <h2>Interface UX</h2>
+                    <span>Projetado no Figma, essa é uma plataforma
+                        focada em criadores de conteúdos e consumidores de novidades! As publicações são marcadas com
+                        hashtags para serem encontradas facilmente pelo buscador.
+                    </span>
+                    <div class="prj-btn">
+                        <a href="https://www.figma.com/file/SXB78fTpIk6mBlihQfylZd/%23Blogs?node-id=0%3A1"
+                            target="_blank"><input type="button" value="IR P/ O PROTÓTIPO"></a>
+                    </div>
+                </div>
+            </div>
+
             <div id="grillo" class="prj-card">
                 <div class="prj-preview prj-left">
                     <img src="./src/img/img-grillo.jpg" alt="previa">
                 </div>
                 <div class="prj-actions prj-right">
                     <h1>Grillo</h1>
-                    <h2>Interface Mobile</h2>
+                    <h2>Interface UX</h2>
                     <span>Projetado no Figma, esse App é uma rede social, para músicos indepentendes divulgarem
                         seus trabalhos e pessoas encontrarem
                         músicos para novos eventos.</span>
@@ -223,7 +241,7 @@
                 </div>
                 <div class="prj-actions prj-left">
                     <h1>Fast Drink</h1>
-                    <h2>Interface Mobile</h2>
+                    <h2>Android App</h2>
                     <span>Feito no Game Maker Studio, esse é um App delivery de bebidas, de arrastar os produtos para o
                         carrinho.</span>
                     <div class="prj-btn">
@@ -239,7 +257,7 @@
                 </div>
                 <div class="prj-actions prj-right">
                     <h1>Sonic SMS Remake</h1>
-                    <h2>Game Maker Studio</h2>
+                    <h2>Android/ PC Games</h2>
                     <span>Fã games de Sonic de Master System refeitos
                         para Android, com novos personagens, modos e
                         diversas melhorias.</span>
@@ -256,7 +274,7 @@
                 </div>
                 <div class="prj-actions prj-left">
                     <h1>Creative Araya</h1>
-                    <h2>Game Maker Studio</h2>
+                    <h2>Android Games</h2>
                     <span>Inspirado na geração dos jogos arcades nos anos 80/90, esse projeto trás novos títulos ao
                         Android.</span>
                     <div class="prj-btn">
@@ -485,6 +503,19 @@
                 <div class="topic">
                     <p>• Jogos em Multiplayer</p>
                     <p>• Node, React, SASS e NoSQL</p>
+                </div>
+            </div>
+
+            <div id="2022" class="tragetoria">
+                <div class="year-left">
+                    <h1 class="year-title">2022</h1>
+                </div>
+                <div class="point"></div>
+                <div class="line"></div>
+                <div class="topic">
+                    <p>• Projeto: Sonic 3 SMS Remake Timelines</p>
+                    <p>• Novos Websites Landing Page</p>
+                    <p>• Plataforma Web de feedback</p>
                 </div>
             </div>
         </div>
