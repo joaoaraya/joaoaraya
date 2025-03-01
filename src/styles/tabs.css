@@ -1,171 +1,27 @@
-:root {
-    --tab-xp-theme: rgb(244, 87, 105);
-    --tab-prj-theme: rgb(28, 144, 213);
-    --tab-timeline-theme: rgb(108, 162, 243);
-    --navbar-theme: rgb(150, 222, 255);
-    --navbar-bg: rgb(74, 83, 95);
-    --navbar-font: rgb(148, 157, 167);
-}
-
-.light-theme:root {
-    --tab-xp-theme: rgb(244, 87, 105);
-    --tab-prj-theme: rgb(38, 119, 165);
-    --tab-timeline-theme: rgb(108, 162, 243);
-    --navbar-theme: rgb(244, 87, 105);
-    --navbar-bg: rgb(255, 255, 255);
-    --navbar-font: rgb(157, 160, 170);
-}
-
 .tabs {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    margin: 48px 0;
+    gap: 32px;
+    padding-top: 64px;
 }
 
-.tabs button {
-    width: 30%;
-    min-width: 200px;
-    padding: 14px;
-    outline: none;
+.tabButton {
+    border: 0;
+    padding: 0;
+    background-color: transparent;
     cursor: pointer;
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 15px;
-    background-color: inherit;
 }
 
-.tabs button {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    gap: 10px;
+.tabButton p {
+    margin: 0;
+    font-size: 26px;
+    color: var(--body-font-shadow);
 }
 
-/* Cores dos botões */
-
-.btn-xp {
-    color: var(--tab-xp-theme);
-    border: 2px solid var(--tab-xp-theme);
+.tabButton :hover {
+    color: var(--body-font-highlight);
 }
 
-.btn-xp:hover, .btn-xp.active {
-    color: rgb(255, 255, 255);
-    background-color: var(--tab-xp-theme);
-}
-
-.btn-prj {
-    color: var(--tab-prj-theme);
-    border: 2px solid var(--tab-prj-theme);
-}
-
-.btn-prj:hover, .btn-prj.active {
-    color: rgb(255, 255, 255);
-    background-color: var(--tab-prj-theme);
-}
-
-.btn-timeline {
-    color: var(--tab-timeline-theme);
-    border: 2px solid var(--tab-timeline-theme);
-}
-
-.btn-timeline:hover, .btn-timeline.active {
-    color: rgb(255, 255, 255);
-    background-color: var(--tab-timeline-theme);
-}
-
-/* Tab Content (Pagina dentro das tabs) */
-
-.tabcontent {
-    display: none;
-    margin-bottom: 64px;
-    -webkit-animation: fadeEffect 0.5s;
-    animation: fadeEffect 0.5s;
-}
-
-.tab-title {
-    display: none;
-}
-
-/* Efeito Fade-In */
-
-@-webkit-keyframes fadeEffect {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeEffect {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-/* ---------------- Mobile Navbar -------------------- */
-
-@media screen and (max-device-width: 768px), screen and (max-width: 768px) {
-    .tabs {
-        z-index: 1;
-        margin: 0;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        height: 64px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        background-color: var(--navbar-bg);
-        display: flex;
-        overflow-x: auto;
-    }
-
-    .tabs button {
-        display: flex;
-        height: 100%;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        flex-grow: 1;
-        min-width: 50px;
-        overflow: hidden;
-        white-space: nowrap;
-        font-family: sans-serif;
-        font-size: 14px;
-        border: none;
-        border-radius: 0;
-    }
-
-    .btn-xp, .btn-prj, .btn-timeline {
-        color: var(--navbar-font);
-    }
-
-    .btn-xp:hover, .btn-xp.active, .btn-prj:hover, .btn-prj.active, .btn-timeline:hover, .btn-timeline.active {
-        color: var(--navbar-theme);
-        background-color: transparent;
-    }
-
-    .tabcontent {
-        margin-bottom: 42px;
-    }
-
-    /* Titulo das tabs */
-    .tab-title {
-        margin: 32px 10%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 26px;
-        font-weight: bold;
-        max-height: 50px;
-        border-radius: 15px;
-        color: rgb(131, 140, 158);
-        border: 2px solid rgb(131, 140, 158);
-    }
+.tabButton.active p {
+    color: var(--body-font-highlight);
+    font-weight: 700;
 }

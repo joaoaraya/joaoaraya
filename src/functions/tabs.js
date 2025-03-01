@@ -1,32 +1,22 @@
-let tabTop = document.querySelector('.tab-title');
-let click = 0;
+let clickCount = 0;
 
-function openTab(evt, tabName, named) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
+function openTab(event, tabName) {
+    const tabContent = document.querySelectorAll(".tabContent");
+    const tabLinks = document.querySelectorAll(".tabButton");
+
+    // hiddem all tabs
+    tabContent.forEach(content => content.style.display = "none");
+
+    // Clear "active" class for all buttons
+    tabLinks.forEach(link => link.classList.remove("active"));
+
+    // Show selected tab content
     document.getElementById(tabName).style.display = "block";
-    evt.currentTarget.className += " active";
 
-    // Nome da tab
-    tabTop.innerHTML = `<p>${named}</p>`;
+    // Add "active" class to button
+    event.currentTarget.classList.add("active");
 
-    // Scroll to top
-    if (click > 0) {
-        tabTop.scrollIntoView({
-            top: 0,
-            behavior: "smooth"
-        });
-    }
-
-    click++;
+    clickCount++;
 }
 
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
+document.getElementById("defaultOpen")?.click();

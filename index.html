@@ -1,519 +1,96 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en-us">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Me chamo João Araya e sou desenvolvedor de softwares!">
+    <meta name="description"
+        content="I'm a software developer in Brazil and I make websites, webapps and mobile games since 2012.">
     <link rel="icon" type="image/png" href="./src/icons/favicon.png" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="./src/styles/main.css">
+    <link rel="stylesheet" href="./src/styles/global.css">
+    <link rel="stylesheet" href="./src/styles/header.css">
     <link rel="stylesheet" href="./src/styles/tabs.css">
-    <link rel="stylesheet" href="./src/styles/hello.css">
-    <link rel="stylesheet" href="./src/styles/xp.css">
-    <link rel="stylesheet" href="./src/styles/prj.css">
-    <link rel="stylesheet" href="./src/styles/timeline.css">
+    <link rel="stylesheet" href="./src/styles/aboutMe.css">
+    <link rel="stylesheet" href="./src/styles/projects.css">
+    <link rel="stylesheet" href="./src/styles/skills.css">
     <title>João Araya</title>
 </head>
 
 <body>
     <div class="container">
+        <header>
+            <button class="themeSwitch" title="Switch theme"></button>
+            <a href="index.html">
+                <img class="profilePicture" src="./src/pictures/profile.jpg" alt="pic" title="João Araya" />
+            </a>
+        </header>
 
-        <div class="hello">
-            <div class="hello-pic">
-                <img src="./src/img/img-perfil.jpg" alt="foto de perfil">
-                <button class="theme-switch"></button>
-            </div>
-            <div class="hello-cards">
-                <div class="hello-main">
-                    <h1>Olá! Sou o <strong>João Araya,</strong> como vai?</h1>
-                    <div class="hello-contact">
-                        <a id="link-mail-large" title="E-mail" href="mailto:contato@joaoaraya.dev">
-                            <strong>contato</strong>@joaoaraya.dev
-                        </a>
-                        <a id="link-mail" title="E-mail" href="mailto:contato@joaoaraya.dev"></a>
-                        <a id="link-linkedin" title="LinkedIn" href="https://www.linkedin.com/in/joaoaraya/"
-                            target="_blank"></a>
-                        <a id="link-github" title="GitHub" href="https://github.com/joaoaraya" target="_blank"></a>
-                        <a id="link-medium" title="Medium" href="https://medium.com/@joaoaraya" target="_blank"></a>
-                    </div>
-                </div>
-                <div class="hello-desc">
-                    <p>Abaixo poderá conferir um pouco mais sobre mim:</p>
-                </div>
-            </div>
-        </div>
+        <main>
+            <div class="aboutMe">
+                <h1>Hi, I'm João Araya 👋</h1>
+                <p>I'm a software developer in Brazil and I make websites, webapps and mobile games since 2012.</p>
+                <div class="socialButtons">
+                    <a href="https://www.youtube.com/joaoaraya" target="_blank">
+                        <button>
+                            <svg width="13" height="10" viewBox="0 0 13 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.19248 6.23097V2.58329C6.48742 3.19262 7.49033 3.78125 8.67649 4.41586C7.69817 4.95842 6.48742 5.56719 5.19248 6.23097ZM12.4092 0.769134C12.1858 0.47484 11.8051 0.245758 11.3998 0.169916C10.2084 -0.0563167 2.77614 -0.0569602 1.58545 0.169916C1.26042 0.230847 0.970994 0.378126 0.722366 0.606952C-0.325236 1.57929 0.00303302 6.79361 0.255546 7.63825C0.36173 8.00385 0.498998 8.26752 0.671872 8.44059C0.894601 8.66941 1.19955 8.82697 1.54983 8.89762C2.53074 9.10052 7.58422 9.21396 11.379 8.92809C11.7287 8.86716 12.0381 8.70453 12.2822 8.46598C13.2508 7.49754 13.1848 1.99039 12.4092 0.769134Z" />
+                            </svg>
 
-        <div class="tabs">
-            <button class="tablinks btn-prj" onclick="openTab(event, 'prj', 'Projetos')" id="defaultOpen"><i
-                    class="material-icons nav__icon">code</i>Projetos</button>
-            <button class="tablinks btn-xp" onclick="openTab(event, 'xp', 'Experiência')"><i
-                    class="material-icons nav__icon">star_rate</i>Experiência</button>
-            <button class="tablinks btn-timeline" onclick="openTab(event, 'timeline', 'Tragetória')"><i
-                    class="material-icons nav__icon">fast_rewind</i>Tragetória</button>
-        </div>
+                            <p>Youtube</p>
+                        </button>
+                    </a>
 
-        <div class="tab-title"></div>
+                    <a href="https://www.github.com/joaoaraya" target="_blank">
+                        <button>
+                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.66373 0C2.98369 0 0 2.98369 0 6.66484C0 9.60915 1.90935 12.107 4.55776 12.9886C4.8911 13.0496 5.01256 12.8438 5.01256 12.6669C5.01256 12.5091 5.00702 12.0898 5.00369 11.5338C3.1498 11.9364 2.75878 10.6402 2.75878 10.6402C2.45567 9.87066 2.01861 9.66572 2.01861 9.66572C1.4135 9.25196 2.06437 9.26028 2.06437 9.26028C2.73327 9.3077 3.08519 9.9472 3.08519 9.9472C3.67976 10.9655 4.64511 10.6713 5.02477 10.501C5.0855 10.0703 5.25716 9.77665 5.44796 9.60998C3.96818 9.44192 2.41213 8.86981 2.41213 6.31625C2.41213 5.58884 2.67198 4.99371 3.09822 4.52781C3.02972 4.3592 2.80093 3.6817 3.16339 2.76405C3.16339 2.76405 3.72303 2.5849 4.9962 3.44737C5.52783 3.29956 6.098 3.22551 6.66456 3.22302C7.23057 3.22551 7.80074 3.29956 8.3332 3.44737C9.60554 2.5849 10.1641 2.76405 10.1641 2.76405C10.5276 3.6817 10.2988 4.3592 10.2303 4.52781C10.6574 4.99371 10.9156 5.58884 10.9156 6.31625C10.9156 8.87647 9.35706 9.4397 7.87229 9.60471C8.1119 9.81048 8.32488 10.217 8.32488 10.8391C8.32488 11.7298 8.31684 12.4486 8.31684 12.6669C8.31684 12.8455 8.43664 13.0529 8.77497 12.9877C11.4212 12.1045 13.3288 9.60832 13.3288 6.66484C13.3288 2.98369 10.3449 0 6.66373 0Z" />
+                            </svg>
 
-        <div id="xp" class="tabcontent">
-            <div id="desenvolvedor" class="xp-card">
-                <div class="xp-title">
-                    <h1>Desenvolvedor</h1>
-                </div>
-                <div class="xp-tab-1">
-                    <div class="xp-item">
-                        <img src="./src/icons/ico-android.png" alt="icone">
-                        <span>Apps Híbridos</span>
-                    </div>
-                    <div class="xp-item">
-                        <img src="./src/icons/ico-web.png" alt="icone">
-                        <span>Websites responsivos</span>
-                    </div>
-                    <div class="xp-item">
-                        <img src="./src/icons/ico-interface.png" alt="icone">
-                        <span>Interfaces</span>
-                    </div>
-                </div>
-                <div class="xp-tab-2">
-                    <div class="xp-item">
-                        <img src="./src/icons/ico-jogos.png" alt="icone">
-                        <span>Jogos 2D</span>
-                    </div>
-                    <div class="xp-item">
-                        <img src="./src/icons/ico-multiplayer.png" alt="icone">
-                        <span>Jogos Multiplayer</span>
-                    </div>
-                    <div class="xp-item">
-                        <img src="./src/icons/ico-api.png" alt="icone">
-                        <span>APIs</span>
-                    </div>
+                            <p>GitHub</p>
+                        </button>
+                    </a>
+
+                    <a href="mailto:contato@joaoaraya.dev?subject=Hello!" target="_blank">
+                        <button>
+                            <svg width="12" height="9" viewBox="0 0 12 9" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.25 2.42999V7.87499C11.25 8.17336 11.1315 8.45951 10.9205 8.67049C10.7095 8.88147 10.4234 8.99999 10.125 8.99999H1.125C0.826632 8.99999 0.540483 8.88147 0.329505 8.67049C0.118526 8.45951 0 8.17336 0 7.87499V2.63812L1.125 3.25124L5.355 5.55749C5.43793 5.60225 5.53077 5.62547 5.625 5.62499C5.72405 5.62397 5.82107 5.5968 5.90625 5.54624L10.125 3.08812L11.25 2.42999Z" />
+                                <path
+                                    d="M11.25 1.125L10.125 1.78875L5.625 4.41563L1.125 1.96875L0 1.35V1.125C0 0.826632 0.118526 0.540483 0.329505 0.329505C0.540483 0.118526 0.826632 0 1.125 0H10.125C10.4234 0 10.7095 0.118526 10.9205 0.329505C11.1315 0.540483 11.25 0.826632 11.25 1.125Z" />
+                            </svg>
+
+                            <p>Mail</p>
+                        </button>
+                    </a>
                 </div>
             </div>
 
-            <div id="programador" class="xp-card">
-                <div class="xp-title">
-                    <h1>Programador</h1>
+            <div class="content">
+                <div class="tabs">
+                    <button class="tabButton" onclick="openTab(event, 'tabProjects')" id="defaultOpen">
+                        <p>Projects</p>
+                    </button>
+
+                    <button class="tabButton" onclick="openTab(event, 'tabSkills')">
+                        <p>Skills</p>
+                    </button>
                 </div>
-                <div class="xp-tab-1">
-                    <div class="xp-item">
-                        <img src="./src/icons/ico-lang.png" alt="icone">
-                        <span>JavaScript</span>
-                    </div>
-                    <div class="xp-item">
-                        <img src="./src/icons/ico-lang.png" alt="icone">
-                        <span>GML (GameMaker)</span>
-                    </div>
-                    <div class="xp-item">
-                        <img src="./src/icons/ico-db.png" alt="icone">
-                        <span>MySQL</span>
-                    </div>
-                    <div class="xp-item">
-                        <img src="./src/icons/ico-db.png" alt="icone">
-                        <span>Firebase</span>
-                    </div>
-                </div>
-                <div class="xp-tab-2">
-                    <div class="xp-item">
-                        <img src="./src/icons/ico-react.png" alt="icone">
-                        <span>React.js</span>
-                    </div>
-                    <div class="xp-item">
-                        <img src="./src/icons/ico-api.png" alt="icone">
-                        <span>TypeScript</span>
-                    </div>
-                    <div class="xp-item">
-                        <img src="./src/icons/ico-api.png" alt="icone">
-                        <span>Node.js</span>
-                    </div>
-                    <div class="xp-item">
-                        <img src="./src/icons/ico-api.png" alt="icone">
-                        <span>AdonisJS</span>
-                    </div>
-                </div>
+
+                <div id="tabProjects" class="tabContent"></div>
+                <div id="tabSkills" class="tabContent"></div>
             </div>
-
-            <div id="designer" class="xp-card">
-                <div class="xp-title">
-                    <h1>Designer</h1>
-                </div>
-                <div class="xp-tab-1">
-                    <div class="xp-item">
-                        <img src="./src/icons/ico-css.png" alt="icone">
-                        <span>CSS, SASS</span>
-                    </div>
-                    <div class="xp-item">
-                        <img src="./src/icons/ico-cursor.png" alt="icone">
-                        <span>Figma</span>
-                    </div>
-                    <div class="xp-item">
-                        <img src="./src/icons/ico-cursor.png" alt="icone">
-                        <span>Adobe Photoshop</span>
-                    </div>
-                    <div class="xp-item">
-                        <img src="./src/icons/ico-cursor.png" alt="icone">
-                        <span>Adobe Ilustrator</span>
-                    </div>
-                </div>
-                <div class="xp-tab-2">
-                    <div class="xp-item">
-                        <img src="./src/icons/ico-edit.png" alt="icone">
-                        <span>Wireframe</span>
-                    </div>
-                    <div class="xp-item">
-                        <img src="./src/icons/ico-interface.png" alt="icone">
-                        <span>Identidade visual</span>
-                    </div>
-                    <div class="xp-item">
-                        <img src="./src/icons/ico-simbolo.png" alt="icone">
-                        <span>Logotipo</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="prj" class="tabcontent">
-
-
-
-            <div id="cardapio-facil" class="prj-card">
-                <div class="prj-preview prj-left">
-                    <img src="./src/img/img-cardapio-facil.png" alt="previa">
-                </div>
-                <div class="prj-actions prj-right">
-                    <h1>Cardápio Fácil</h1>
-                    <h2>React Web App</h2>
-                    <span>Desenvolvido com as tecnologias React.js com TypeScript, SASS e Firebase, esse projeto ajuda
-                        micro/empreendedores que vendem comidas por delivery a divulgarem seu menu de forma fácil e
-                        rápida, através de um link.</span>
-                    <div class="prj-btn">
-                        <a href="https://github.com/joaoaraya/prj-cardapioFacil" target="_blank"><input type="button"
-                                value="IR P/ O PROJETO"></a>
-                    </div>
-                </div>
-            </div>
-
-            <div id="hashtag-blogs" class="prj-card">
-                <div class="prj-preview prj-right">
-                    <img src="./src/img/img-hashtag-blogs.png" alt="previa">
-                </div>
-                <div class="prj-actions prj-left">
-                    <h1>#Blogs</h1>
-                    <h2>Interface UX</h2>
-                    <span>Projetado no Figma, essa é uma plataforma
-                        focada em criadores de conteúdos e consumidores de novidades! As publicações são marcadas com
-                        hashtags para serem encontradas facilmente pelo buscador.
-                    </span>
-                    <div class="prj-btn">
-                        <a href="https://www.figma.com/file/SXB78fTpIk6mBlihQfylZd/%23Blogs?node-id=0%3A1"
-                            target="_blank"><input type="button" value="IR P/ O PROTÓTIPO"></a>
-                    </div>
-                </div>
-            </div>
-
-            <div id="grillo" class="prj-card">
-                <div class="prj-preview prj-left">
-                    <img src="./src/img/img-grillo.jpg" alt="previa">
-                </div>
-                <div class="prj-actions prj-right">
-                    <h1>Grillo</h1>
-                    <h2>Interface UX</h2>
-                    <span>Projetado no Figma, esse App é uma rede social, para músicos indepentendes divulgarem
-                        seus trabalhos e pessoas encontrarem
-                        músicos para novos eventos.</span>
-                    <div class="prj-btn">
-                        <a href="https://www.figma.com/file/pQaMD4aDuJgb61CS6bINi9/Grillo?node-id=2%3A2"
-                            target="_blank"><input type="button" value="IR P/ O PROTÓTIPO"></a>
-                    </div>
-                </div>
-            </div>
-
-            <div id="fast-drink" class="prj-card">
-                <div class="prj-preview prj-right">
-                    <img src="./src/img/img-fast-drink.jpg" alt="previa">
-                </div>
-                <div class="prj-actions prj-left">
-                    <h1>Fast Drink</h1>
-                    <h2>App Mobile</h2>
-                    <span>Feito no Game Maker Studio, esse é um App delivery de bebidas, de arrastar os produtos para o
-                        carrinho.</span>
-                    <div class="prj-btn">
-                        <a href="https://play.google.com/store/apps/details?id=com.arayagames.fastdrink"
-                            target="_blank"><input type="button" value="IR P/ O APP"></a>
-                    </div>
-                </div>
-            </div>
-
-            <div id="sonic-sms-remake" class="prj-card">
-                <div class="prj-preview prj-left">
-                    <img src="./src/img/img-sonic-sms-remake.png" alt="previa">
-                </div>
-                <div class="prj-actions prj-right">
-                    <h1>Sonic SMS Remake</h1>
-                    <h2>Games Mobile</h2>
-                    <span>Fã games de Sonic de Master System refeitos
-                        para Android, com novos personagens, modos e
-                        diversas melhorias.</span>
-                    <div class="prj-btn">
-                        <a href="https://sonic-sms-remake.blogspot.com/" target="_blank"><input type="button"
-                                value="IR P/ OS JOGOS"></a>
-                    </div>
-                </div>
-            </div>
-
-            <div id="creative-araya" class="prj-card">
-                <div class="prj-preview prj-right">
-                    <img src="./src/img/img-creative-araya.jpg" alt="previa">
-                </div>
-                <div class="prj-actions prj-left">
-                    <h1>Creative Araya</h1>
-                    <h2>Games Mobile</h2>
-                    <span>Inspirado na geração dos jogos arcades nos anos 80/90, esse projeto trás novos títulos ao
-                        Android.</span>
-                    <div class="prj-btn">
-                        <a href="https://play.google.com/store/apps/developer?id=Creative+Araya" target="_blank"><input
-                                type="button" value="IR P/ OS JOGOS"></a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div id="timeline" class="tabcontent">
-            <div id="2012" class="tragetoria">
-                <div class="year-left">
-                    <img class="year-photo" src="./src/img/img-2012.jpg" alt="2012">
-                </div>
-                <div class="year-right">
-                    <h1 class="year-title">2012</h1>
-                </div>
-                <div class="point"></div>
-                <div class="line"></div>
-                <div class="topic">
-                    <p>• Blogger</p>
-                    <p>• Tutoriais do S40 Editor</p>
-                </div>
-                <div class="comment">
-                    <p>Minha tragetória se iniciou aqui, quando era apaixonado por celulares da Nokia Series 40.
-                    </p>
-                    <p>Encontrei o Blogger para publicar meus tutoriais de como deixar o sistema dos celulares
-                        mais personalizados.</p>
-                </div>
-            </div>
-
-            <div id="2013" class="tragetoria">
-                <div class="year-left">
-                    <h1 class="year-title">2013</h1>
-                </div>
-                <div class="point"></div>
-                <div class="line"></div>
-                <div class="topic">
-                    <p>• HTML e CSS</p>
-                    <p>• Modificação de Firmwares</p>
-                    <p>• Temas personalizados</p>
-                    <p>• Flash Lite</p>
-                </div>
-                <div class="comment">
-                    <p>Quando comecei a personalizar e
-                        melhorar as páginas do Blogger, conheci
-                        o HTML e o CSS.
-                    </p>
-                    <p>Neste ano começei a criar as minhas
-                        próprias modificações, com ícones
-                        dinâmicos em Gif e Flash Lite,
-                        inspirados nas Lives Tiles do Windows.</p>
-                    <p>Publiquei uma página exclusiva para
-                        baixar os temas, wallpapers dinâmicos
-                        e aplicativos raros à parte da "CFW".</p>
-                </div>
-            </div>
-
-            <div id="2014" class="tragetoria">
-                <div class="year-left">
-                    <img class="year-photo" src="./src/img/img-2014.jpg" alt="2014">
-                </div>
-                <div class="year-right">
-                    <h1 class="year-title">2014</h1>
-                </div>
-                <div class="point"></div>
-                <div class="line"></div>
-                <div class="topic">
-                    <p>• Design</p>
-                    <p>• Programação de jogos</p>
-                    <p>• Game Maker Studio</p>
-                </div>
-                <div class="comment">
-                    <p>Resolvi aprender programação do zero
-                        assistindo tutoriais no Youtube,
-                        para dar vida aos jogos que desenhava.
-                    </p>
-                    <p>Meu primeiro jogo foi concluído após
-                        1 ano e 2 meses de desenvolvimento,
-                        estudos e muitos testes.</p>
-                </div>
-            </div>
-
-            <div id="2015" class="tragetoria">
-                <div class="year-left">
-                    <h1 class="year-title">2015, 2016</h1>
-                </div>
-                <div class="point"></div>
-                <div class="line"></div>
-                <div class="topic">
-                    <p>• Publicação na Google Play</p>
-                    <p>• Dev Blogs</p>
-                    <p>• Novos jogos</p>
-                </div>
-            </div>
-
-            <div id="2017" class="tragetoria">
-                <div class="year-left">
-                    <img class="year-photo" src="./src/img/img-2017.jpg" alt="2017">
-                </div>
-                <div class="year-right">
-                    <h1 class="year-title">2017</h1>
-                </div>
-                <div class="point"></div>
-                <div class="line"></div>
-                <div class="topic">
-                    <p>• Primeira Etec</p>
-                    <p>• Logística</p>
-                    <p>• Aplicativo Delivery</p>
-                    <p>• Entrevista para TV</p>
-                </div>
-                <div class="comment">
-                    <p>Neste ano, passei no vestibular da
-                        escola técnica do estado de São Paulo
-                        para estudar Logística.
-                    </p>
-                    <p>Desenvolvi um aplicativo delivery
-                        de bebidas, com funções de arrastar e
-                        soltar as garrafas no carrinho, para uma
-                        feira de profissões na Etec. </p>
-                    <p>Rolou até uma entrevista sobre o app,
-                        para o canal de televisão local, em
-                        nosso estande de apresentação.</p>
-                    <p>Apliquei o conceito do funcionamento
-                        do sistema em um trabalho de equipe,
-                        em forma de maquete.</p>
-                </div>
-            </div>
-
-            <div id="2018" class="tragetoria">
-                <div class="year-left">
-                    <img class="year-photo" src="./src/img/img-2018.jpg" alt="2018">
-                </div>
-                <div class="year-right">
-                    <h1 class="year-title">2018</h1>
-                </div>
-                <div class="point"></div>
-                <div class="line"></div>
-                <div class="topic">
-                    <p>• Projeto: Sonic SMS Remake</p>
-                    <p>• Segunda Etec</p>
-                    <p>• Desenvolvimento de Sistemas</p>
-                    <p>• JavaScript, C# e SQL</p>
-                </div>
-                <div class="comment">
-                    <p>Recriar o meu jogo favorito (Sonic 1
-                        de Master System) para o Android, se
-                        tornou um projeto real.
-                    </p>
-                    <p>Fui estudar o que eu mais avama!
-                        Programação, sistemas e aplicativos...</p>
-                </div>
-            </div>
-
-            <div id="2019" class="tragetoria">
-                <div class="year-left">
-                    <img class="year-photo" src="./src/img/img-2019.jpg" alt="2019">
-                </div>
-                <div class="year-right">
-                    <h1 class="year-title">2019</h1>
-                </div>
-                <div class="point"></div>
-                <div class="line"></div>
-                <div class="topic">
-                    <p>• Interfaces no Figma</p>
-                    <p>• Rede Social: Grillo</p>
-                    <p>• Administração</p>
-                    <p>• Distros Linux</p>
-                    <p>• Meu jogo na SAGE 2019</p>
-                    <p>• Estande do meu jogo na Etec</p>
-                    <p>• 1º lugar no Hackathon</p>
-                </div>
-                <div class="comment">
-                    <p>Em meu 2º TCC, foi desenvovlvido uma
-                        rede social, em React, para músicos
-                        iniciantes divulgarem seus trabalhos e
-                        serem vistos para novas oportunidades.
-                    </p>
-                    <p>O nome Grillo foi inspirado no mesmo,
-                        que é livre para “cantar” por onde passa.
-                    </p>
-                    <p>Neste ano, complementei meus estudos
-                        fazendo um semestre de Adm. e Suporte
-                        em Informática, no segundo período.
-                    </p>
-                    <p>Após publicar meu 1º fã Game do Sonic,
-                        fui convidado para participar de um
-                        evento online, organizado nos EUA, para
-                        divulgar o jogo na página da SAGE 2019.
-                    </p>
-                </div>
-            </div>
-
-            <div id="2020" class="tragetoria">
-                <div class="year-left">
-                    <h1 class="year-title">2020</h1>
-                </div>
-                <div class="point"></div>
-                <div class="line"></div>
-                <div class="topic">
-                    <p>• Projeto: Sonic 2 SMS Remake</p>
-                    <p>• Meu jogo na SAGE 2020</p>
-                    <p>• Design para Marketing</p>
-                </div>
-                <div class="comment">
-                    <p>No segundo ano consecutivo participei
-                        do evento da SAGE, após concluir
-                        meu 2º fã Game de Sonic (Sonic 2 de
-                        Master System).
-                    </p>
-                    <p>Encontrei meu primeiro emprego como
-                        Designer Gráfico para Marketing em
-                        Redes Sociais.
-                    </p>
-                </div>
-            </div>
-
-            <div id="2021" class="tragetoria">
-                <div class="year-left">
-                    <h1 class="year-title">2021</h1>
-                </div>
-                <div class="point"></div>
-                <div class="line"></div>
-                <div class="topic">
-                    <p>• Jogos em Multiplayer</p>
-                    <p>• Node, React, SASS e NoSQL</p>
-                </div>
-            </div>
-
-            <div id="2022" class="tragetoria">
-                <div class="year-left">
-                    <h1 class="year-title">2022</h1>
-                </div>
-                <div class="point"></div>
-                <div class="line"></div>
-                <div class="topic">
-                    <p>• Projeto: Sonic 3 SMS Remake Timelines</p>
-                    <p>• Novos Websites Landing Page</p>
-                </div>
-            </div>
-        </div>
+        </main>
     </div>
 
+    <script src="./src/functions/themeSwitch.js"></script>
     <script src="./src/functions/tabs.js"></script>
-    <script src="./src/functions/themes.js"></script>
+    <script src="./src/functions/projectsList.js"></script>
+    <script src="./src/functions/skillsList.js"></script>
 </body>
 
 </html>
