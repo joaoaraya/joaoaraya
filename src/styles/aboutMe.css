@@ -72,6 +72,10 @@
 
 
 @media screen and (max-device-width: 480px), screen and (max-width: 480px) {
+    .aboutMe h1 {
+        font-size: 24px;
+    }
+
     .socialButtons {
         flex-grow: 1;
         justify-content: center;
@@ -87,8 +91,8 @@
     }
 
     .socialButtons button svg {
-        width: 24px;
-        height: 24px;
+        width: 20px;
+        height: 20px;
     }
 
     .socialButtons button p {
