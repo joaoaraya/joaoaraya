@@ -36,17 +36,17 @@
     justify-content: center;
     gap: 8px;
     min-width: 120px;
-    border: none;
     padding: 8px 16px;
+    border: none;
     border-radius: 4px;
-    background-color: var(--body-bg-shadow);
     cursor: pointer;
+    background-color: var(--body-bg-shadow);
 }
 
 .socialButtons button svg {
-    fill: var(--body-font-highlight);
     width: 14px;
     height: 14px;
+    fill: var(--body-font-highlight);
 }
 
 .socialButtons button p {
@@ -66,4 +66,32 @@
 
 .socialButtons button:hover p {
     color: var(--body-font-alternative);
+}
+
+/* ---- Mobile ---- */
+
+
+@media screen and (max-device-width: 480px), screen and (max-width: 480px) {
+    .socialButtons {
+        flex-grow: 1;
+        justify-content: center;
+    }
+
+    .socialButtons a {
+        flex: 1;
+    }
+
+    .socialButtons button {
+        min-width: unset;
+        width: 100%;
+    }
+
+    .socialButtons button svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .socialButtons button p {
+        display: none;
+    }
 }

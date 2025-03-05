@@ -26,3 +26,16 @@
     text-decoration: underline;
     color: var(--body-font-highlight);
 }
+
+
+/* ---- Mobile ---- */
+
+@media screen and (max-device-width: 480px), screen and (max-width: 480px) {
+    .tabs {
+        padding: 32px 0 8px 0;
+    }
+
+    .tabButton p {
+        font-size: 22px;
+    }
+}

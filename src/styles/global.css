@@ -39,17 +39,10 @@ main {
     padding: 0 24px 64px 24px;
 }
 
-/* ---------- Mobile --------------- */
+/* ---- Mobile ---- */
 
-/*
-@media screen and (max-device-width: 768px), screen and (max-width: 768px) {
-    .container {
-        position: relative;
-        top: -45px;
-    }
-
-    body {
-        display: inline;
+@media screen and (max-device-width: 480px), screen and (max-width: 480px) {
+    main {
+        padding: 0 16px 64px 16px;
     }
 }
-    */

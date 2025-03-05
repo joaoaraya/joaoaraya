@@ -2,6 +2,7 @@
     display: flex;
     gap: 8px;
     margin: 24px 0;
+    flex-flow: row wrap;
 }
 
 .tagButton {
@@ -40,9 +41,9 @@
     justify-content: space-between;
     align-items: center;
     gap: 16px;
-    cursor: pointer;
     width: 100%;
     padding: 8px;
+    cursor: pointer;
 }
 
 .projectItem p {
@@ -79,4 +80,22 @@
 .projectItem:hover {
     background-color: var(--body-bg-shadow);
     border-radius: 4px;
+}
+
+
+/* ---- Mobile ---- */
+
+@media screen and (max-device-width: 480px), screen and (max-width: 480px) {
+    .projectItem {
+        padding: 0;
+        margin-bottom: 16px;
+    }
+
+    .projectItem #icon {
+        height: 40px;
+    }
+
+    .projectItem #name {
+        font-size: 12px;
+    }
 }
