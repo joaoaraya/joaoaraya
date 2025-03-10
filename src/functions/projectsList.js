@@ -73,7 +73,7 @@ function listProjects() {
             tags: ['Game', 'Mobile', 'Prototype']
         },
         {
-            name: 'Cards Cârlei',
+            name: 'Cãrlei Cards',
             launched: '2016',
             imgFile: 'carlei.png',
             link: '',
@@ -94,7 +94,7 @@ function listProjects() {
             tags: ['Game', 'Mobile']
         },
         {
-            name: 'Ball Red Lost in Dream',
+            name: 'Ball Red: Lost in Dream',
             launched: '2015',
             imgFile: 'ballred-ld.png',
             link: '',
