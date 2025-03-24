@@ -94,13 +94,6 @@ function listProjects() {
             tags: ['Game', 'Mobile']
         },
         {
-            name: 'Ball Red: Lost in Dream',
-            launched: '2015',
-            imgFile: 'ballred-ld.png',
-            link: '',
-            tags: ['Game', 'Mobile', 'Prototype']
-        },
-        {
             name: 'Pin Pow Classic',
             launched: '2015',
             imgFile: 'pinpow-classic.png',
