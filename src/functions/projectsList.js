@@ -13,42 +13,42 @@ function listProjects() {
             name: '#Blogs',
             launched: '2022',
             imgFile: 'blogs.png',
-            link: '',
+            link: 'https://www.figma.com/design/SXB78fTpIk6mBlihQfylZd/-Blogs?node-id=0-1&p=f&t=NRcuv9s3Wk3sjtil-0',
             tags: ['Webapp', 'Prototype']
         },
         {
             name: 'Cardápio Fácil',
             launched: '2021',
             imgFile: 'cardapio-facil.png',
-            link: '',
+            link: 'https://github.com/joaoaraya/prj-cardapioFacil',
             tags: ['Webapp', 'Open source']
         },
         {
             name: 'Sonic SMS Remake 2',
             launched: '2019 - 2022',
             imgFile: 'sonic-2.png',
-            link: '',
+            link: 'https://sonic-sms-remake.blogspot.com/p/two.html',
             tags: ['Game', 'Mobile']
         },
         {
             name: 'Open Sonic SMS',
             launched: '2019 - 2020',
             imgFile: 'open-sonic-sms.png',
-            link: '',
+            link: 'https://github.com/joaoaraya/prj-openSonicSMS',
             tags: ['Game', 'Open source']
         },
         {
             name: 'Grillo',
             launched: '2019 - 2020',
             imgFile: 'grillo.png',
-            link: '',
+            link: 'https://www.figma.com/design/pQaMD4aDuJgb61CS6bINi9/Grillo?node-id=2-2&p=f&t=TBtlzymiSTWFMR4E-0',
             tags: ['Webapp', 'Prototype']
         },
         {
             name: 'Sonic SMS Remake',
             launched: '2018 - 2022',
             imgFile: 'sonic-1.png',
-            link: '',
+            link: 'https://sonic-sms-remake.blogspot.com/p/one.html',
             tags: ['Game', 'Mobile']
         },
         {
