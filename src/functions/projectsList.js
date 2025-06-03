@@ -7,6 +7,7 @@ function listProjects() {
             launched: '2022 - TBA',
             imgFile: 'sonic-3.png',
             link: '',
+            linkExternal: false,
             tags: ['Game', 'Mobile']
         },
         {
@@ -14,6 +15,7 @@ function listProjects() {
             launched: '2022',
             imgFile: 'blogs.png',
             link: 'https://www.figma.com/design/SXB78fTpIk6mBlihQfylZd/-Blogs?node-id=0-1&p=f&t=NRcuv9s3Wk3sjtil-0',
+            linkExternal: true,
             tags: ['Webapp', 'Prototype']
         },
         {
@@ -21,6 +23,7 @@ function listProjects() {
             launched: '2021',
             imgFile: 'cardapio-facil.png',
             link: 'https://github.com/joaoaraya/prj-cardapioFacil',
+            linkExternal: true,
             tags: ['Webapp', 'Open source']
         },
         {
@@ -28,6 +31,7 @@ function listProjects() {
             launched: '2019 - 2022',
             imgFile: 'sonic-2.png',
             link: 'https://sonic-sms-remake.blogspot.com/p/two.html',
+            linkExternal: true,
             tags: ['Game', 'Mobile']
         },
         {
@@ -35,6 +39,7 @@ function listProjects() {
             launched: '2019 - 2020',
             imgFile: 'open-sonic-sms.png',
             link: 'https://github.com/joaoaraya/prj-openSonicSMS',
+            linkExternal: true,
             tags: ['Game', 'Open source']
         },
         {
@@ -42,6 +47,7 @@ function listProjects() {
             launched: '2019 - 2020',
             imgFile: 'grillo.png',
             link: 'https://www.figma.com/design/pQaMD4aDuJgb61CS6bINi9/Grillo?node-id=2-2&p=f&t=TBtlzymiSTWFMR4E-0',
+            linkExternal: true,
             tags: ['Webapp', 'Prototype']
         },
         {
@@ -49,6 +55,7 @@ function listProjects() {
             launched: '2018 - 2022',
             imgFile: 'sonic-1.png',
             link: 'https://sonic-sms-remake.blogspot.com/p/one.html',
+            linkExternal: true,
             tags: ['Game', 'Mobile']
         },
         {
@@ -56,6 +63,7 @@ function listProjects() {
             launched: '2017',
             imgFile: 'fast-drink.png',
             link: '',
+            linkExternal: false,
             tags: ['Android App', 'Prototype']
         },
         {
@@ -63,6 +71,7 @@ function listProjects() {
             launched: '2017',
             imgFile: 'ballred-2.png',
             link: '',
+            linkExternal: false,
             tags: ['Game', 'Mobile', 'Prototype']
         },
         {
@@ -70,6 +79,7 @@ function listProjects() {
             launched: '2016',
             imgFile: 'sunset-rush.png',
             link: '',
+            linkExternal: false,
             tags: ['Game', 'Mobile', 'Prototype']
         },
         {
@@ -77,6 +87,7 @@ function listProjects() {
             launched: '2016',
             imgFile: 'carlei.png',
             link: '',
+            linkExternal: false,
             tags: ['Game', 'Mobile']
         },
         {
@@ -84,6 +95,7 @@ function listProjects() {
             launched: '2016',
             imgFile: 'pinpow-breakout.png',
             link: '',
+            linkExternal: false,
             tags: ['Game', 'Mobile']
         },
         {
@@ -91,6 +103,7 @@ function listProjects() {
             launched: '2015',
             imgFile: 'eu-nao-sei-quiz.png',
             link: '',
+            linkExternal: false,
             tags: ['Game', 'Mobile']
         },
         {
@@ -98,6 +111,7 @@ function listProjects() {
             launched: '2015',
             imgFile: 'pinpow-classic.png',
             link: '',
+            linkExternal: false,
             tags: ['Game', 'Mobile']
         },
         {
@@ -105,6 +119,7 @@ function listProjects() {
             launched: '2014 - 2015',
             imgFile: 'ballred-mi.png',
             link: '',
+            linkExternal: false,
             tags: ['Game', 'Mobile']
         },
         {
@@ -112,6 +127,7 @@ function listProjects() {
             launched: '2012 - 2015',
             imgFile: 's40-editor.png',
             link: '',
+            linkExternal: false,
             tags: ['Website']
         },
     ];
@@ -142,7 +158,7 @@ function listProjects() {
 
     const projectCard = (item) => {
         return `
-            <div class="projectItem" onclick="window.location.href='${item.link}'">
+            <div class="projectItem" onclick="window.open('${item.link}', '${item.linkExternal ? '_blank' : '_self'}')">
                 <img id="icon" src="./src/icons/projects/${item.imgFile}" alt="${item.name}" />
                 <div id="details">
                     <p id="name">${item.name}</p>
