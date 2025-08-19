@@ -5,7 +5,7 @@ export default function AboutMe() {
 
     const socialLinks = [
         {
-            title: 'Youtube',
+            title: 'YouTube',
             icon: 'youtube',
             url: 'https://www.youtube.com/joaoaraya'
         }, {

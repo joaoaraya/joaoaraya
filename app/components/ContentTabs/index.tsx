@@ -13,7 +13,7 @@ export default function ContentTabs() {
             content: <ProjectsList />
         }, {
             id: 'tabSkills',
-            title: 'Skills',
+            title: 'My Skills',
             content: <SkillsList />
         }
     ];

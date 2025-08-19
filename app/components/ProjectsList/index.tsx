@@ -27,7 +27,7 @@ export default function ProjectsList() {
             imgFile: 'cardapio-facil.png',
             link: 'https://github.com/joaoaraya/prj-cardapioFacil',
             linkExternal: true,
-            tags: ['Apps', 'Open source']
+            tags: ['Apps', 'Open Source']
         },
         {
             name: 'Sonic SMS Remake 2',
@@ -43,7 +43,7 @@ export default function ProjectsList() {
             imgFile: 'open-sonic-sms.png',
             link: 'game/open-sonic-sms',
             linkExternal: false,
-            tags: ['Games', 'Open source']
+            tags: ['Games', 'Open Source']
         },
         {
             name: 'Grillo',
@@ -135,7 +135,7 @@ export default function ProjectsList() {
         },
     ];
 
-    const tags = ['All', 'Games', 'Apps', 'Websites', 'Prototypes', 'Open source'];
+    const tags = ['All', 'Games', 'Apps', 'Websites', 'Prototypes', 'Open Source'];
 
 
     const [activeTag, setActiveTag] = useState(tags[0]);
