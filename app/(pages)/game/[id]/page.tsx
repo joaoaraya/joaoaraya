@@ -6,7 +6,7 @@ import "./style.scss";
 
 
 type PageProps = {
-    id: string;
+    id: any;
 }
 
 export default function PageAcao({ params }: { params: PageProps }) {
