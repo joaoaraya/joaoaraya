@@ -1,0 +1,42 @@
+.tabsMenu {
+    display: flex;
+    gap: 32px;
+    padding: 56px 0 8px 0;
+
+    .tabButton {
+        border: 0;
+        padding: 0;
+        background-color: transparent;
+        cursor: pointer;
+
+        p {
+            margin: 0;
+            font-size: 26px;
+            color: var(--body-font-shadow);
+        }
+
+        & :hover {
+            color: var(--body-font-highlight);
+        }
+
+        &.active p {
+            font-weight: 700;
+            text-decoration: underline;
+            color: var(--body-font-highlight);
+        }
+    }
+}
+
+
+/* ---- Mobile ---- */
+
+@media screen and (max-device-width: 480px),
+screen and (max-width: 480px) {
+    .tabsMenu {
+        padding: 40px 0 0 0;
+
+        .tabButton p {
+            font-size: 24px;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.gallery {
+    position: relative;
+    padding: 0;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 2px solid var(--body-bg);
+
+    img {
+        display: block;
+        max-width: 100%;
+    }
+
+    &#video::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 30%;
+        height: 30%;
+        background: url('/assets/icons/svg/play.svg') no-repeat center center;
+        background-size: contain;
+        pointer-events: none;
+    }
+
+    &:hover {
+        border-radius: 8px;
+        border: 2px solid #EA923B;
+    }
+}

@@ -1,0 +1,41 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 24px;
+
+    #title {
+        font-size: 16px;
+        color: var(--body-font-highlight);
+    }
+
+    #actions {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-grow: 1;
+        gap: 20px;
+
+        .profilePicture {
+            display: block;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+
+            &:hover {
+                filter: opacity(0.75);
+            }
+        }
+    }
+}
+
+
+/* ---- Mobile ---- */
+
+@media screen and (max-device-width: 480px),
+screen and (max-width: 480px) {
+    header {
+        padding: 24px 16px;
+    }
+}

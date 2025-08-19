@@ -1,0 +1,24 @@
+:root {
+    --theme-ico: url('/assets/icons/svg/moon.svg') no-repeat center;
+    --theme-ico-hover: rgb(182, 202, 231);
+}
+
+.darkTheme:root {
+    --theme-ico: url('/assets/icons/svg/sun.svg') no-repeat center;
+    --theme-ico-hover: rgb(141, 126, 96);
+}
+
+.themeSwitch {
+    background: var(--theme-ico);
+    background-size: 16px;
+    background-color: var(--body-bg-shadow);
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+
+    &:hover {
+        background-color: var(--theme-ico-hover);
+    }
+}

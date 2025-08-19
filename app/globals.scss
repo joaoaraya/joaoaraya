@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --body-bg: #ffffff;
+    --body-bg-shadow: #E2E8EB;
+    --body-font: #2D333A;
+    --body-font-highlight: #2D333A;
+    --body-font-alternative: #ffffff;
+    --body-font-shadow: #ABAFB0;
+    --pageMaxWidth: 720px;
+}
+
+.darkTheme:root {
+    --body-bg: #2D333A;
+    --body-bg-shadow: #4A535F;
+    --body-font: #9FADBA;
+    --body-font-highlight: #FFFFFF;
+    --body-font-alternative: #2D333A;
+    --body-font-shadow: #828B98;
+}
+
+* {
+    margin: 0;
+    font-family: 'Open Sans', serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    transition: 0.1s;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0 auto;
+    background: var(--body-bg);
+}
+
+.container {
+    width: 100%;
+    max-width: var(--pageMaxWidth);
+}
+
+main {
+    padding: 0 24px 64px 24px;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ---- Mobile ---- */
+
+@media screen and (max-device-width: 480px),
+screen and (max-width: 480px) {
+    main {
+        padding: 0 16px 64px 16px;
+    }
+}
