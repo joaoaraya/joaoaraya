@@ -4,12 +4,15 @@ import Header from "@/app/components/Header";
 import { notFound } from 'next/navigation';
 import "./style.scss";
 
-
 type PageProps = {
-    id: any;
+    id: string;
+};
+
+interface PageAcaoProps {
+    params: PageProps;
 }
 
-export default function PageAcao({ params }: { params: PageProps }) {
+export default function PageAcao({ params }: PageAcaoProps) {
 
     const games = [
         {
