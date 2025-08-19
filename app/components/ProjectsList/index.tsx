@@ -11,7 +11,7 @@ export default function ProjectsList() {
             imgFile: 'sonic-3.png',
             link: 'game/sonic-sms-remake-3',
             linkExternal: false,
-            tags: ['Games']
+            tags: ['Games', 'Prototypes']
         },
         {
             name: '#Blogs',
