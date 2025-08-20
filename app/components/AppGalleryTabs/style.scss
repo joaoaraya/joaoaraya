@@ -1,0 +1,60 @@
+.appGalleryTabs {
+    margin-top: 32px;
+
+    #menu {
+        display: flex;
+        gap: 24px;
+        margin-bottom: 16px;
+
+        .tabButton {
+            border: 0;
+            padding: 0;
+            background-color: transparent;
+            cursor: pointer;
+
+            p {
+                margin: 0;
+                font-size: 16px;
+                font-weight: bold;
+                color: var(--body-font-shadow);
+            }
+
+            & :hover {
+                color: var(--body-font-highlight);
+            }
+
+            &.active p {
+                text-decoration: underline;
+                color: var(--body-font-highlight);
+            }
+        }
+    }
+
+    #gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+
+        &>* {
+            flex: 1 0 30%;
+            box-sizing: border-box;
+        }
+    }
+}
+
+/* ---- Mobile ---- */
+
+@media screen and (max-device-width: 480px),
+screen and (max-width: 480px) {
+    .appGalleryTabs {
+        margin-top: 16px;
+
+        #gallery {
+            justify-content: space-between;
+
+            &>* {
+                flex: 0 0 48%;
+            }
+        }
+    }
+}

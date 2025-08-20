@@ -1,6 +1,7 @@
+import Header from "@/app/components/Header";
+import AppHeader from "@/app/components/AppHeader";
 import LinkButton from "@/app/components/buttons/LinkButton";
 import OpenMediaModal from "@/app/components/buttons/OpenMediaModal";
-import Header from "@/app/components/Header";
 import { notFound } from 'next/navigation';
 import "./style.scss";
 
@@ -14,14 +15,14 @@ export default function PageGame({ params }) {
             year: '2014 - 2015',
             describle: 'Game | Action platform',
             overview: 'Help Ball Red to collect all Kenicoins in the Kenizou Island, but for that you have to go through many obstacles and traps scattered throughout the game!',
-            downloads: [
+            links: [
                 {
                     icon: 'download',
-                    platform: 'Android (APK)',
+                    title: 'Android (APK)',
                     url: 'https://www.google.com'
                 }, {
                     icon: 'download',
-                    platform: 'Windows (EXE)',
+                    title: 'Windows (EXE)',
                     url: 'https://www.google.com'
                 }
             ],
@@ -47,14 +48,14 @@ export default function PageGame({ params }) {
             year: '2015',
             describle: 'Game | Arcade',
             overview: "Feel the years 90's nostalgia with this mix of classic Arkanoid and Snake! Are 100 levels and 4 different rackets.",
-            downloads: [
+            links: [
                 {
                     icon: 'download',
-                    platform: 'Android (APK)',
+                    title: 'Android (APK)',
                     url: 'https://www.google.com'
                 }, {
                     icon: 'download',
-                    platform: 'Windows (EXE)',
+                    title: 'Windows (EXE)',
                     url: 'https://www.google.com'
                 }
             ],
@@ -71,14 +72,14 @@ export default function PageGame({ params }) {
             year: '2015',
             describle: 'Game | Trivia',
             overview: '(Portuguese-Brazil) Neste jogo você terá que quebrar a cabeça, para acertar as 30 questões que estão cheias de pegadinhas!',
-            downloads: [
+            links: [
                 {
                     icon: 'download',
-                    platform: 'Android (APK)',
+                    title: 'Android (APK)',
                     url: 'https://www.google.com'
                 }, {
                     icon: 'download',
-                    platform: 'Windows (EXE)',
+                    title: 'Windows (EXE)',
                     url: 'https://www.google.com'
                 }
             ],
@@ -93,14 +94,14 @@ export default function PageGame({ params }) {
             year: '2016',
             describle: 'Game | Arcade',
             overview: 'Prepare your rackets, Pin Pow is back!\nNow with many blocks to destroy and challenges to enjoy it to the fullest!',
-            downloads: [
+            links: [
                 {
                     icon: 'download',
-                    platform: 'Android (APK)',
+                    title: 'Android (APK)',
                     url: 'https://www.google.com'
                 }, {
                     icon: 'download',
-                    platform: 'Windows (EXE)',
+                    title: 'Windows (EXE)',
                     url: 'https://www.google.com'
                 }
             ],
@@ -123,14 +124,14 @@ export default function PageGame({ params }) {
             year: '2016',
             describle: 'Game | Cards',
             overview: 'Color yes, color no, number yes, number no. You choose!\nA card game like UNO, perfect for playing any time.',
-            downloads: [
+            links: [
                 {
                     icon: 'download',
-                    platform: 'Android (APK)',
+                    title: 'Android (APK)',
                     url: 'https://www.google.com'
                 }, {
                     icon: 'download',
-                    platform: 'Windows (EXE)',
+                    title: 'Windows (EXE)',
                     url: 'https://www.google.com'
                 }
             ],
@@ -145,14 +146,14 @@ export default function PageGame({ params }) {
             year: '2016',
             describle: 'Prototype Game | Racing',
             overview: 'Cross all the finish lines before time runs out!\nCollect trophies to unlock new stages and new cars!',
-            downloads: [
+            links: [
                 {
                     icon: 'download',
-                    platform: 'Android (APK)',
+                    title: 'Android (APK)',
                     url: 'https://www.google.com'
                 }, {
                     icon: 'download',
-                    platform: 'Windows (EXE)',
+                    title: 'Windows (EXE)',
                     url: 'https://www.google.com'
                 }
             ],
@@ -170,14 +171,14 @@ export default function PageGame({ params }) {
             year: '2017',
             describle: 'Prototype Game | Action platform',
             overview: 'Ball Red is back! Now with her sister Ball Pink.',
-            downloads: [
+            links: [
                 {
                     icon: 'download',
-                    platform: 'Android (APK)',
+                    title: 'Android (APK)',
                     url: 'https://www.google.com'
                 }, {
                     icon: 'download',
-                    platform: 'Windows (EXE)',
+                    title: 'Windows (EXE)',
                     url: 'https://www.google.com'
                 }
             ],
@@ -203,10 +204,10 @@ export default function PageGame({ params }) {
             year: '2018 - 2022',
             describle: 'Game | Action platform',
             overview: 'A fan remake game of Sonic The Hedgehog mixes versions of Master System and Game Gear with Genesis zones, new powers, new characters and local Wi-Fi multiplayer.',
-            downloads: [
+            links: [
                 {
                     icon: 'link',
-                    platform: 'Download page',
+                    title: 'Download page',
                     url: 'https://sonic-sms-remake.blogspot.com/p/one.html'
                 }
             ],
@@ -227,10 +228,10 @@ export default function PageGame({ params }) {
             year: '2019 - 2022',
             describle: 'Game | Action platform',
             overview: 'A fan remake game of Sonic The Hedgehog 2 mixes versions of Master System and Game Gear with new zones, powers, characters, team gameplay and local Wi-Fi multiplayer.',
-            downloads: [
+            links: [
                 {
                     icon: 'link',
-                    platform: 'Download page',
+                    title: 'Download page',
                     url: 'https://sonic-sms-remake.blogspot.com/p/two.html'
                 }
             ],
@@ -251,10 +252,10 @@ export default function PageGame({ params }) {
             year: '2019 - 2022',
             describle: 'Game | Action platform',
             overview: 'A fan remake game of Sonic The Hedgehog 2 mixes versions of Master System and Game Gear with new zones, powers, characters, team gameplay and local Wi-Fi multiplayer.',
-            downloads: [
+            links: [
                 {
                     icon: 'link',
-                    platform: 'Download page',
+                    title: 'Download page',
                     url: 'https://sonic-sms-remake.blogspot.com/p/two.html'
                 }
             ],
@@ -275,10 +276,10 @@ export default function PageGame({ params }) {
             year: '2022 - TBA',
             describle: 'Prototype Game | Action platform',
             overview: 'A fan remake game mixes Sonic Chaos and Sonic Triple Trouble, in a new game of the Master System and Game Gear versions, with new zones, powers, characters, team gameplay and local Wi-Fi multiplayer.',
-            downloads: [
+            links: [
                 {
                     icon: 'link',
-                    platform: 'Download page',
+                    title: 'Download page',
                     url: 'https://sonic-sms-remake.blogspot.com/p/three.html'
                 }
             ],
@@ -299,10 +300,10 @@ export default function PageGame({ params }) {
             year: '2019 - 2020',
             describle: 'Open Source Game | Action platform',
             overview: 'An engine of Sonic SMS Remake fan games for Game Maker Studio 1.x.',
-            downloads: [
+            links: [
                 {
                     icon: 'link',
-                    platform: 'GitHub Repository',
+                    title: 'GitHub Repository',
                     url: 'https://github.com/joaoaraya/prj-openSonicSMS'
                 }
             ],
@@ -330,25 +331,20 @@ export default function PageGame({ params }) {
 
             <main>
                 <div className="gamePage">
-                    <div id="gameHeader">
-                        <div id="icon">
-                            <img src={mediaPath + game.id + '/icon.png'} alt="Icon" />
-                        </div>
+                    <AppHeader
+                        icon={mediaPath + game.id + '/icon.png'}
+                        title={game.title}
+                        describle={game.describle}
+                        year={game.year}
+                    />
 
-                        <div id="data">
-                            <h1 id="title">{game.title}</h1>
-                            <p id="describle">{game.describle}</p>
-                            <p id="year">{game.year}</p>
-                        </div>
-                    </div>
-
-                    <div id="gameDownloads">
-                        {game.downloads.map((gameDownload, index) =>
+                    <div id="gameLinks">
+                        {game.links.map((gameLink, index) =>
                             <LinkButton
                                 key={index}
-                                icon={gameDownload.icon}
-                                title={gameDownload.platform}
-                                url={gameDownload.url}
+                                icon={gameLink.icon}
+                                title={gameLink.title}
+                                url={gameLink.url}
                             />
                         )}
                     </div>
@@ -361,7 +357,7 @@ export default function PageGame({ params }) {
                     <div id="gameGallery">
                         <h1>Gameplay</h1>
 
-                        <div id="allGallery">
+                        <div id="gallery">
                             {game.galleryVideos?.map((gameVideo, index) => (
                                 <OpenMediaModal
                                     key={index}

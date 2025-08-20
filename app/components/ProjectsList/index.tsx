@@ -17,16 +17,16 @@ export default function ProjectsList() {
             name: '#Blogs',
             launched: '2022',
             imgFile: 'blogs.png',
-            link: 'https://www.figma.com/design/SXB78fTpIk6mBlihQfylZd/-Blogs?node-id=0-1&p=f&t=NRcuv9s3Wk3sjtil-0',
-            linkExternal: true,
+            link: 'app/hashtag-blogs',
+            linkExternal: false,
             tags: ['Apps', 'Prototypes']
         },
         {
             name: 'Cardápio Fácil',
             launched: '2021',
             imgFile: 'cardapio-facil.png',
-            link: 'https://github.com/joaoaraya/prj-cardapioFacil',
-            linkExternal: true,
+            link: 'app/cardapio-facil',
+            linkExternal: false,
             tags: ['Apps', 'Open Source']
         },
         {
@@ -49,8 +49,8 @@ export default function ProjectsList() {
             name: 'Grillo',
             launched: '2019 - 2020',
             imgFile: 'grillo.png',
-            link: 'https://www.figma.com/design/pQaMD4aDuJgb61CS6bINi9/Grillo?node-id=2-2&p=f&t=TBtlzymiSTWFMR4E-0',
-            linkExternal: true,
+            link: 'app/grillo',
+            linkExternal: false,
             tags: ['Apps', 'Prototypes']
         },
         {
@@ -129,8 +129,8 @@ export default function ProjectsList() {
             name: 'S40 Editor',
             launched: '2012 - 2015',
             imgFile: 's40-editor.png',
-            link: 'website/s40-editor',
-            linkExternal: false,
+            link: 'https://web.archive.org/web/20161003205719/http://s40editor.blogspot.com.br/',
+            linkExternal: true,
             tags: ['Websites']
         },
     ];

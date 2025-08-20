@@ -3,7 +3,7 @@
     padding: 0;
     border-radius: 4px;
     overflow: hidden;
-    border: 2px solid var(--body-bg);
+    border: 1px solid var(--body-img-border);
 
     img {
         display: block;
@@ -25,6 +25,6 @@
 
     &:hover {
         border-radius: 8px;
-        border: 2px solid #EA923B;
+        border: 1px solid #EA923B;
     }
 }

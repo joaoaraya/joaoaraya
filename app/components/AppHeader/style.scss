@@ -1,0 +1,66 @@
+.appHeader {
+    display: flex;
+    gap: 16px;
+    color: var(--body-font-highlight);
+
+    #icon {
+        img {
+            display: block;
+            width: 120px;
+            height: 120px;
+            border-radius: 8px;
+        }
+    }
+
+    #data {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        #title {
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        #describle {
+            font-size: 16px;
+            color: var(--body-font);
+        }
+
+        #year {
+            font-size: 12px;
+            color: var(--body-font);
+        }
+    }
+}
+
+
+/* ---- Mobile ---- */
+
+@media screen and (max-device-width: 480px),
+screen and (max-width: 480px) {
+
+    .appHeader {
+        #icon {
+            img {
+                width: 64px;
+                height: 64px;
+            }
+        }
+
+        #data {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+
+            #title {
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+            #describle {
+                font-size: 14px;
+            }
+        }
+    }
+}

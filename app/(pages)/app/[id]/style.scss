@@ -1,0 +1,43 @@
+.appPage {
+    #appLinks {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin: 16px 0;
+    }
+
+    #appOverview {
+        margin-top: 32px;
+        font-size: 16px;
+        max-width: 85%;
+
+        h1 {
+            margin-bottom: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            color: var(--body-font-highlight);
+        }
+
+        p {
+            font-size: 14px;
+            white-space: pre-line;
+            color: var(--body-font);
+        }
+    }
+}
+
+
+/* ---- Mobile ---- */
+
+@media screen and (max-device-width: 480px),
+screen and (max-width: 480px) {
+    .appPage {
+        #appOverview {
+            margin-top: 16px;
+
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+}
