@@ -303,7 +303,7 @@ export default function PageGame({ params }) {
             links: [
                 {
                     icon: 'link',
-                    title: 'GitHub Repository',
+                    title: 'GitHub project',
                     url: 'https://github.com/joaoaraya/prj-openSonicSMS'
                 }
             ],
