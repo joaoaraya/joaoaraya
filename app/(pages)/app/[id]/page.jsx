@@ -19,11 +19,11 @@ export default function PageApp({ params }) {
                 {
                     icon: 'download',
                     title: 'Android (APK)',
-                    url: 'https://www.google.com'
+                    url: 'https://www.mediafire.com/file/mpibjnmrzxzvhjj/Fast_Drink_v1-0-0.apk/file'
                 }, {
                     icon: 'download',
                     title: 'Windows (EXE)',
-                    url: 'https://www.google.com'
+                    url: 'https://www.mediafire.com/file/edsjooe1ssok1tk/Fast_Drink_v1-0-0.zip/file'
                 }
             ],
             gallery: {

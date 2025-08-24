@@ -19,11 +19,11 @@ export default function PageGame({ params }) {
                 {
                     icon: 'download',
                     title: 'Android (APK)',
-                    url: 'https://www.google.com'
+                    url: 'https://www.mediafire.com/file/8ismis2y8sezbjb/Ball_Red_MI_v3-6-0.apk/file'
                 }, {
                     icon: 'download',
                     title: 'Windows (EXE)',
-                    url: 'https://www.google.com'
+                    url: 'https://www.mediafire.com/file/qvsok08ucbpccqo/Ball_Red_MI_v3-6-0.zip/file'
                 }
             ],
             galleryVideos: [
@@ -52,11 +52,11 @@ export default function PageGame({ params }) {
                 {
                     icon: 'download',
                     title: 'Android (APK)',
-                    url: 'https://www.google.com'
+                    url: 'https://www.mediafire.com/file/dephonkxouucp2o/Pin_Pow_Classic_v2-3-1.apk/file'
                 }, {
                     icon: 'download',
                     title: 'Windows (EXE)',
-                    url: 'https://www.google.com'
+                    url: 'https://www.mediafire.com/file/aco35vu1nuigmw3/Pin_Pow_Classic_v2-3-1.zip/file'
                 }
             ],
             galleryImages: [
@@ -69,18 +69,18 @@ export default function PageGame({ params }) {
         }, {
             id: 'eu-nao-sei-quiz',
             title: 'Eu Não Sei Quiz',
-            year: '2015',
+            year: '2016',
             describle: 'Game | Trivia',
             overview: '(Portuguese-Brazil) Neste jogo você terá que quebrar a cabeça, para acertar as 30 questões que estão cheias de pegadinhas!',
             links: [
                 {
                     icon: 'download',
                     title: 'Android (APK)',
-                    url: 'https://www.google.com'
+                    url: 'https://www.mediafire.com/file/ro3sbu1xlsgcpmm/ENSQ_v1-3-5.apk/file'
                 }, {
                     icon: 'download',
                     title: 'Windows (EXE)',
-                    url: 'https://www.google.com'
+                    url: 'https://www.mediafire.com/file/senh25h9csojpry/ENSQ_v1-3-5.zip/file'
                 }
             ],
             galleryImages: [
@@ -98,11 +98,11 @@ export default function PageGame({ params }) {
                 {
                     icon: 'download',
                     title: 'Android (APK)',
-                    url: 'https://www.google.com'
+                    url: 'https://www.mediafire.com/file/j305zqp000676vp/Pin_Pow_Breakout_v1-7-2.apk/file'
                 }, {
                     icon: 'download',
                     title: 'Windows (EXE)',
-                    url: 'https://www.google.com'
+                    url: 'https://www.mediafire.com/file/mn87vwtgo8u441e/Pin_Pow_Breakout_v1-7-2.zip/file'
                 }
             ],
             galleryVideos: [
@@ -128,11 +128,11 @@ export default function PageGame({ params }) {
                 {
                     icon: 'download',
                     title: 'Android (APK)',
-                    url: 'https://www.google.com'
+                    url: 'https://www.mediafire.com/file/t062wqom5z8t0aj/Carlei_v1_1_6.apk/file'
                 }, {
                     icon: 'download',
                     title: 'Windows (EXE)',
-                    url: 'https://www.google.com'
+                    url: 'https://www.mediafire.com/file/hzrk1h9z2webkdh/Carlei_v1_1_6.zip/file'
                 }
             ],
             galleryImages: [
@@ -143,18 +143,18 @@ export default function PageGame({ params }) {
         }, {
             id: 'sunset-rush',
             title: 'Sunset Rush',
-            year: '2016',
+            year: '2017',
             describle: 'Prototype Game | Racing',
             overview: 'Cross all the finish lines before time runs out!\nCollect trophies to unlock new stages and new cars!',
             links: [
                 {
                     icon: 'download',
                     title: 'Android (APK)',
-                    url: 'https://www.google.com'
+                    url: 'https://www.mediafire.com/file/kg7o1qzs3top0v1/Sunset_Rush_v0-6-0.apk/file'
                 }, {
                     icon: 'download',
                     title: 'Windows (EXE)',
-                    url: 'https://www.google.com'
+                    url: 'https://www.mediafire.com/file/m0kw4ocb7d18kt4/Sunset_Rush_v0-6-0.zip/file'
                 }
             ],
             galleryImages: [
@@ -175,11 +175,11 @@ export default function PageGame({ params }) {
                 {
                     icon: 'download',
                     title: 'Android (APK)',
-                    url: 'https://www.google.com'
+                    url: 'https://www.mediafire.com/file/petofv2iih4tjj0/Ball_Red_2_KM_v0-2-0.apk/file'
                 }, {
                     icon: 'download',
                     title: 'Windows (EXE)',
-                    url: 'https://www.google.com'
+                    url: 'https://www.mediafire.com/file/z7qw4mkh1cuf1rj/Ball_Red_2_KM_v0-2-0.zip/file'
                 }
             ],
             galleryVideos: [

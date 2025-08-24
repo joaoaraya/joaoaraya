@@ -79,7 +79,7 @@ export default function ProjectsList() {
         },
         {
             name: 'Sunset Rush',
-            launched: '2016',
+            launched: '2017',
             imgFile: 'sunset-rush.png',
             link: 'game/sunset-rush',
             linkExternal: false,
@@ -103,7 +103,7 @@ export default function ProjectsList() {
         },
         {
             name: 'Eu Não Sei Quiz',
-            launched: '2015',
+            launched: '2016',
             imgFile: 'eu-nao-sei-quiz.png',
             link: 'game/eu-nao-sei-quiz',
             linkExternal: false,
