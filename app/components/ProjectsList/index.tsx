@@ -6,6 +6,14 @@ import "./style.scss";
 export default function ProjectsList() {
     const projects = [
         {
+            name: 'EV Voltedge',
+            launched: '2025',
+            imgFile: 'ev-cars.png',
+            link: 'https://ev-voltedge.vercel.app',
+            linkExternal: true,
+            tags: ['Websites']
+        },
+        {
             name: 'Sonic SMS Remake 3: Timelines',
             launched: '2022 - TBA',
             imgFile: 'sonic-3.png',
@@ -20,6 +28,14 @@ export default function ProjectsList() {
             link: 'app/hashtag-blogs',
             linkExternal: false,
             tags: ['Apps', 'Prototypes']
+        },
+        {
+            name: 'Real Estate Loren',
+            launched: '2022',
+            imgFile: 'real-estate-loren.png',
+            link: 'https://real-estate-loren.vercel.app/',
+            linkExternal: true,
+            tags: ['Websites']
         },
         {
             name: 'Cardápio Fácil',
