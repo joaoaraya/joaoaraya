@@ -10,7 +10,7 @@ export default function Header(props: HeaderProps) {
     return (
         <header>
             <div id="title">
-                {props.title && (<p><b>João Araya's</b> projects</p>)}
+                {props.title && (<p><a href="/"><b>João Araya's</b> projects</a></p>)}
             </div>
 
             <div id="actions">

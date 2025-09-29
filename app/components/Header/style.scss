@@ -8,6 +8,14 @@ header {
     #title {
         font-size: 16px;
         color: var(--body-font-highlight);
+
+        a {
+            color: var(--body-font-highlight);
+
+            &:hover {
+                color: #EA923B;
+            }
+        }
     }
 
     #actions {
