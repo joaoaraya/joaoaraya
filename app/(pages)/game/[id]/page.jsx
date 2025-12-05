@@ -166,39 +166,6 @@ export default function PageGame({ params }) {
                 'screenshot-1.png',
             ],
         }, {
-            id: 'ball-red-2',
-            title: 'Ball Red 2: Kanizo Msampha',
-            year: '2017',
-            describle: 'Prototype Game | Action platform',
-            overview: 'Ball Red is back! Now with her sister Ball Pink.',
-            links: [
-                {
-                    icon: 'download',
-                    title: 'Android (APK)',
-                    url: 'https://www.mediafire.com/file/petofv2iih4tjj0/Ball_Red_2_KM_v0-2-0.apk/file'
-                }, {
-                    icon: 'download',
-                    title: 'Windows (EXE)',
-                    url: 'https://www.mediafire.com/file/z7qw4mkh1cuf1rj/Ball_Red_2_KM_v0-2-0.zip/file'
-                }
-            ],
-            galleryVideos: [
-                {
-                    thumbnail: 'amun-palace-2.png',
-                    url: 'https://www.youtube.com/embed/P_i6zlE-9GI?si=OnmqqHSUn06TCuJB'
-                }
-            ],
-            galleryImages: [
-                'oris-sand.png',
-                'amun-palace-1.png',
-                'emma-sanctuary-2.png',
-                'ball-fire.png',
-                'emma-sanctuary-1.png',
-                'menu.png',
-                'gribow-skyscraper.png',
-                'native-sunset.png',
-            ],
-        }, {
             id: 'sonic-sms-remake',
             title: 'Sonic SMS Remake',
             year: '2018 - 2022',

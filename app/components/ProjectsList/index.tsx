@@ -86,14 +86,6 @@ export default function ProjectsList() {
             tags: ['Apps', 'Prototypes']
         },
         {
-            name: 'Ball Red 2: Kanizo Msampha',
-            launched: '2017',
-            imgFile: 'ballred-2.png',
-            link: 'game/ball-red-2',
-            linkExternal: false,
-            tags: ['Games', 'Prototypes']
-        },
-        {
             name: 'Sunset Rush',
             launched: '2017',
             imgFile: 'sunset-rush.png',
