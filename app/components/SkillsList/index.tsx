@@ -12,6 +12,7 @@ export default function SkillsList() {
                 { imgFile: "js.png", name: "JavaScript", experiencePeriod: "2018 - present" },
                 { imgFile: "csharp.png", name: "C#", experiencePeriod: "2018 - 2019" },
                 { imgFile: "sql.png", name: "SQL", experiencePeriod: "2019 - present" },
+                { imgFile: "java.png", name: "Java", experiencePeriod: "2026 - present" },
             ],
         },
         {

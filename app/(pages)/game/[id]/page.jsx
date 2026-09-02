@@ -259,7 +259,7 @@ export default function PageGame({ params }) {
                 'turquoise-hill-3.gif',
                 'bonus-1.gif',
                 'menu.png',
-                'bonanza-bros.png',
+                'bonanza-bros.gif',
             ],
         }, {
             id: 'open-sonic-sms',
