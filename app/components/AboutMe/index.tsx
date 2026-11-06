@@ -15,7 +15,7 @@ export default function AboutMe() {
         }, {
             title: 'Mail',
             icon: 'mail',
-            url: 'mailto:contato@joaoaraya.dev?subject=Hello!'
+            url: 'mailto:creativearaya@gmail.com?subject=hello'
         }
     ]
 
